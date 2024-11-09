@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jQQv4Uf9kdw=",
+  "dgSpecHash": "oLa6kauwBAk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Konos\\source\\repos\\BookProject\\BookProject\\BookProject.csproj",
+  "projectFilePath": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\BookProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Konos\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Konos\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
