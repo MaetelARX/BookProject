@@ -583,3 +583,4 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.pdb
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.genruntimeconfig.cache
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\ref\BookProject.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SixLabors.ImageSharp.dll

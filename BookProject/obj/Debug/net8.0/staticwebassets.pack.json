@@ -13,6 +13,78 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\48_laws_of_power.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\48_laws_of_power.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\anna_karenina.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\anna_karenina.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\faust.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\faust.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\new_earth.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\new_earth.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_48_laws_of_power.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_48_laws_of_power.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_anna_karenina.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_anna_karenina.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_faust.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_faust.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_new_earth.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_new_earth.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_the_prince.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_the_prince.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_the_republic.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_the_republic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_war_and_peace.jpeg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_war_and_peace.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_why_world_is.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_why_world_is.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_will_to_power.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_will_to_power.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\the_prince.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\the_prince.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\the_republic.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\the_republic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\war_and_peace.jpeg",
+      "PackagePath": "staticwebassets\\images\\books\\war_and_peace.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\why_world_is.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\why_world_is.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\will_to_power.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\will_to_power.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BookProject.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
