@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\33_strategies_of_war.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\33_strategies_of_war.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\48_laws_of_power.jpg",
       "PackagePath": "staticwebassets\\images\\books\\48_laws_of_power.jpg"
     },
@@ -21,12 +25,40 @@
       "PackagePath": "staticwebassets\\images\\books\\anna_karenina.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\berserk.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\berserk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\crime_and_punishment.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\crime_and_punishment.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\eugene_onegin.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\eugene_onegin.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\faust.jpg",
       "PackagePath": "staticwebassets\\images\\books\\faust.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\idiot.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\idiot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\iron_flame.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\iron_flame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\it.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\it.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\new_earth.jpg",
       "PackagePath": "staticwebassets\\images\\books\\new_earth.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_33_strategies_of_war.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_33_strategies_of_war.jpg"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_48_laws_of_power.jpg",
@@ -37,12 +69,44 @@
       "PackagePath": "staticwebassets\\images\\books\\resized_anna_karenina.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_berserk.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_berserk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_crime_and_punishment.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_crime_and_punishment.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_eugene_onegin.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_eugene_onegin.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_faust.jpg",
       "PackagePath": "staticwebassets\\images\\books\\resized_faust.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_idiot.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_idiot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_iron_flame.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_iron_flame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_it.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_it.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_new_earth.jpg",
       "PackagePath": "staticwebassets\\images\\books\\resized_new_earth.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_song_of_ice_and_water.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_song_of_ice_and_water.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_struggle.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_struggle.jpg"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_the_prince.jpg",
@@ -51,6 +115,30 @@
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_the_republic.jpg",
       "PackagePath": "staticwebassets\\images\\books\\resized_the_republic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_the_wretch.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_the_wretch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_to_my_first_love.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_to_my_first_love.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_tobacco.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_tobacco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_under_the_yoke.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_under_the_yoke.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_vagabond.png",
+      "PackagePath": "staticwebassets\\images\\books\\resized_vagabond.png"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_vinland_saga.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_vinland_saga.jpg"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_war_and_peace.jpeg",
@@ -65,12 +153,44 @@
       "PackagePath": "staticwebassets\\images\\books\\resized_will_to_power.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\song_of_ice_and_water.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\song_of_ice_and_water.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\struggle.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\struggle.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\the_prince.jpg",
       "PackagePath": "staticwebassets\\images\\books\\the_prince.jpg"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\the_republic.jpg",
       "PackagePath": "staticwebassets\\images\\books\\the_republic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\the_wretch.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\the_wretch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\to_my_first_love.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\to_my_first_love.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\tobacco.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\tobacco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\under_the_yoke.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\under_the_yoke.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\vagabond.png",
+      "PackagePath": "staticwebassets\\images\\books\\vagabond.png"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\vinland_saga.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\vinland_saga.jpg"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\war_and_peace.jpeg",

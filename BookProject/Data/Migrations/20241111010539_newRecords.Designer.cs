@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookProject.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241110200251_add-authorname")]
-    partial class addauthorname
+    [Migration("20241111010539_newRecords")]
+    partial class newRecords
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,6 +57,224 @@ namespace BookProject.Data.Migrations
                     b.HasIndex("GenreId");
 
                     b.ToTable("Books");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AuthorName = "Лев Толстой",
+                            BookName = "Война и Мир",
+                            GenreId = 5,
+                            Image = "/images/books/resized_war_and_peace.jpeg",
+                            Price = 20.5
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AuthorName = "Лев Толстой",
+                            BookName = "Ана Каренина",
+                            GenreId = 3,
+                            Image = "/images/books/resized_anna_karenina.jpg",
+                            Price = 18.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AuthorName = "Николо Макиавели",
+                            BookName = "Владетелят",
+                            GenreId = 1,
+                            Image = "/images/books/resized_the_prince.jpg",
+                            Price = 15.0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AuthorName = "Иван Вазов",
+                            BookName = "Нова земя",
+                            GenreId = 3,
+                            Image = "/images/books/resized_new_earth.jpg",
+                            Price = 12.5
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AuthorName = "Платон",
+                            BookName = "Държавата",
+                            GenreId = 4,
+                            Image = "/images/books/resized_the_republic.jpg",
+                            Price = 14.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AuthorName = "Йохан Волфганг Гьоте",
+                            BookName = "Фауст",
+                            GenreId = 3,
+                            Image = "/images/books/resized_faust.jpg",
+                            Price = 16.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AuthorName = "Фридрих Ницше",
+                            BookName = "Воля за власт",
+                            GenreId = 4,
+                            Image = "/images/books/resized_will_to_power.jpg",
+                            Price = 17.989999999999998
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AuthorName = "Пол Кенеди",
+                            BookName = "Защо светът е такъв какъвто е",
+                            GenreId = 4,
+                            Image = "/images/books/resized_why_world_is.jpg",
+                            Price = 22.989999999999998
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AuthorName = "Робърт Грийн",
+                            BookName = "48-те закона на властта",
+                            GenreId = 1,
+                            Image = "/images/books/resized_48_laws_of_power.jpg",
+                            Price = 19.989999999999998
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AuthorName = "Иван Вазов",
+                            BookName = "Под Игото",
+                            GenreId = 5,
+                            Image = "/images/books/resized_under_the_yoke.jpg",
+                            Price = 21.989999999999998
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AuthorName = "Джордж Р. Р. Мартин",
+                            BookName = "Песен за огън и лед",
+                            GenreId = 6,
+                            Image = "/images/books/resized_song_of_ice_and_water.jpg",
+                            Price = 39.990000000000002
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AuthorName = "Кентаро Миура",
+                            BookName = "Берсерк",
+                            GenreId = 6,
+                            Image = "/images/books/resized_berserk.jpg",
+                            Price = 109.98999999999999
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AuthorName = "Такехико Иноуе",
+                            BookName = "Вагабонд",
+                            GenreId = 5,
+                            Image = "/images/books/resized_vagabond.png",
+                            Price = 59.990000000000002
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AuthorName = "Макото Юкимура",
+                            BookName = "Винланд Сага",
+                            GenreId = 1,
+                            Image = "/images/books/resized_vinland_saga.jpg",
+                            Price = 19.989999999999998
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AuthorName = "Ребека Яроз",
+                            BookName = "Железен Пламък",
+                            GenreId = 1,
+                            Image = "/images/books/resized_iron_flame.jpg",
+                            Price = 33.0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AuthorName = "Стивън Кинг",
+                            BookName = "То",
+                            GenreId = 2,
+                            Image = "/images/books/resized_it.jpg",
+                            Price = 19.989999999999998
+                        },
+                        new
+                        {
+                            Id = 17,
+                            AuthorName = "Робърт Грийн",
+                            BookName = "33-те стратегии за войната",
+                            GenreId = 1,
+                            Image = "/images/books/resized_33_strategies_of_war.jpg",
+                            Price = 33.0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AuthorName = "Фьодор Достоевски",
+                            BookName = "Идиот",
+                            GenreId = 5,
+                            Image = "/images/books/resized_idiot.jpg",
+                            Price = 59.990000000000002
+                        },
+                        new
+                        {
+                            Id = 19,
+                            AuthorName = "Фьодор Достоевски",
+                            BookName = "Престъпление и наказание",
+                            GenreId = 5,
+                            Image = "/images/books/resized_crime_and_punishment.jpg",
+                            Price = 30.0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            AuthorName = "Алескандър Пушкин",
+                            BookName = "Евгений Онегин",
+                            GenreId = 5,
+                            Image = "/images/books/resized_eugene_onegin.jpg",
+                            Price = 50.0
+                        },
+                        new
+                        {
+                            Id = 21,
+                            AuthorName = "Виктор Юго",
+                            BookName = "Клетниците",
+                            GenreId = 5,
+                            Image = "/images/books/resized_the_wretch.jpg",
+                            Price = 30.0
+                        },
+                        new
+                        {
+                            Id = 22,
+                            AuthorName = "Христо Ботев",
+                            BookName = "Борба",
+                            GenreId = 7,
+                            Image = "/images/books/resized_struggle.jpg",
+                            Price = 25.0
+                        },
+                        new
+                        {
+                            Id = 23,
+                            AuthorName = "Христо Ботев",
+                            BookName = "До моето първо либе",
+                            GenreId = 7,
+                            Image = "/images/books/resized_to_my_first_love.jpg",
+                            Price = 21.989999999999998
+                        },
+                        new
+                        {
+                            Id = 24,
+                            AuthorName = "Димитър Димов",
+                            BookName = "Тютюн",
+                            GenreId = 1,
+                            Image = "/images/books/resized_tobacco.jpg",
+                            Price = 40.0
+                        });
                 });
 
             modelBuilder.Entity("BookProject.Models.CartDetail", b =>
@@ -101,6 +319,43 @@ namespace BookProject.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            GenreName = "Action"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            GenreName = "Horror"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            GenreName = "Romance"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            GenreName = "Science"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            GenreName = "Novel"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            GenreName = "Fantasy"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            GenreName = "Poem"
+                        });
                 });
 
             modelBuilder.Entity("BookProject.Models.Order", b =>

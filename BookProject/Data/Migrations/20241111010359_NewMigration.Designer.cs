@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookProject.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241108193738_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20241111010359_NewMigration")]
+    partial class NewMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,6 +32,11 @@ namespace BookProject.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AuthorName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("BookName")
                         .IsRequired()
@@ -52,6 +57,89 @@ namespace BookProject.Data.Migrations
                     b.HasIndex("GenreId");
 
                     b.ToTable("Books");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AuthorName = "Лев Толстой",
+                            BookName = "Война и Мир",
+                            GenreId = 5,
+                            Image = "/images/books/resized_war_and_peace.jpeg",
+                            Price = 20.5
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AuthorName = "Лев Толстой",
+                            BookName = "Ана Каренина",
+                            GenreId = 3,
+                            Image = "/images/books/resized_anna_karenina.jpg",
+                            Price = 18.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AuthorName = "Николо Макиавели",
+                            BookName = "Владетелят",
+                            GenreId = 1,
+                            Image = "/images/books/resized_the_prince.jpg",
+                            Price = 15.0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AuthorName = "Иван Вазов",
+                            BookName = "Нова земя",
+                            GenreId = 3,
+                            Image = "/images/books/resized_new_earth.jpg",
+                            Price = 12.5
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AuthorName = "Платон",
+                            BookName = "Държавата",
+                            GenreId = 4,
+                            Image = "/images/books/resized_the_republic.jpg",
+                            Price = 14.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AuthorName = "Йохан Волфганг Гьоте",
+                            BookName = "Фауст",
+                            GenreId = 3,
+                            Image = "/images/books/resized_faust.jpg",
+                            Price = 16.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AuthorName = "Фридрих Ницше",
+                            BookName = "Воля за власт",
+                            GenreId = 4,
+                            Image = "/images/books/resized_will_to_power.jpg",
+                            Price = 17.989999999999998
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AuthorName = "Пол Кенеди",
+                            BookName = "Защо светът е такъв какъвто е",
+                            GenreId = 4,
+                            Image = "/images/books/resized_why_world_is.jpg",
+                            Price = 22.989999999999998
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AuthorName = "Робърт Грийн",
+                            BookName = "48-те закона на властта",
+                            GenreId = 1,
+                            Image = "/images/books/resized_48_laws_of_power.jpg",
+                            Price = 19.989999999999998
+                        });
                 });
 
             modelBuilder.Entity("BookProject.Models.CartDetail", b =>
@@ -96,6 +184,43 @@ namespace BookProject.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            GenreName = "Action"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            GenreName = "Horror"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            GenreName = "Romance"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            GenreName = "Science"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            GenreName = "Novel"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            GenreName = "Fantasy"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            GenreName = "Poem"
+                        });
                 });
 
             modelBuilder.Entity("BookProject.Models.Order", b =>
@@ -341,12 +466,10 @@ namespace BookProject.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -383,12 +506,10 @@ namespace BookProject.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");

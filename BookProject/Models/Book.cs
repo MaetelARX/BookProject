@@ -1,5 +1,6 @@
 ﻿using NuGet.Protocol.Core.Types;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookProject.Models
 {
@@ -19,5 +20,8 @@ namespace BookProject.Models
         public Genre Genre { get; set; }
         public List<OrderDetail> OrderDetail { get; set; }
         public List<CartDetail> CartDetail { get; set; }
+
+        [NotMapped]
+        public string GenreName { get; set; }
     }
 }

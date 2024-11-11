@@ -1,4 +1,6 @@
 using BookProject.Data;
+using BookProject.Repositories;
+using BookProject.Repositories.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +17,7 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>(options => options.SignI
     .AddDefaultUI()
     .AddDefaultTokenProviders();
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddTransient<IHomeRepository, HomeRepository>();
 var app = builder.Build();
 //using(var scope = app.Services.CreateScope())
 //{
@@ -34,6 +36,7 @@ else
     app.UseHsts();
 }
 
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
