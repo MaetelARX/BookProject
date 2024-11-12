@@ -90,23 +90,47 @@
                     Author: @book.AuthorName<br>
                     Price: @($"{book.Price:f2}")лв<br>
                 </p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
+                <button type="button" onclick="add(@book.Id),redirectToCart()" class="btn btn-primary">Add to cart</button>
             </div>
         </div>
     }
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var dropdowns = document.querySelectorAll('.dropdown-submenu');
-        dropdowns.forEach(function (dropdown) {
-            dropdown.addEventListener('mouseenter', function () {
-                var submenu = this.querySelector('.dropdown-menu');
-                if (submenu) submenu.classList.add('show');
-            });
-            dropdown.addEventListener('mouseleave', function () {
-                var submenu = this.querySelector('.dropdown-menu');
-                if (submenu) submenu.classList.remove('show');
+@section Scripts {
+    <script>
+        function redirectToCart() {
+            window.location.href = "/Cart/GetUserCart";
+        }
+        async function add(bookId) {
+            var usernameEl = document.getElementById("username");
+            if (usernameEl == null) {
+                window.location.href = "/Identity/Account/Login";
+                return;
+            }
+
+            try {
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                if (response.status == 200) {
+                    var result = await response.json();
+                    var cartCountEl = document.getElementById("cartCount");
+                    cartCountEl.innerHTML = result;
+                }
+            } catch (err) {
+                console.log("Error adding item to cart:", err);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdowns = document.querySelectorAll('.dropdown-submenu');
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('mouseenter', function () {
+                    var submenu = this.querySelector('.dropdown-menu');
+                    if (submenu) submenu.classList.add('show');
+                });
+                dropdown.addEventListener('mouseleave', function () {
+                    var submenu = this.querySelector('.dropdown-menu');
+                    if (submenu) submenu.classList.remove('show');
+                });
             });
         });
-    });
-</script>
+    </script>
+}
+

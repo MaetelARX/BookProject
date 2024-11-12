@@ -13,6 +13,7 @@ namespace BookProject.Controllers
         {
             _cartRepo = cartRepo;
         }
+        [Authorize]
         public async Task<IActionResult> AddItem(int bookId, int qty=1,int redirect = 0)
         {
             var cartCount = await _cartRepo.AddItem(bookId, qty);
