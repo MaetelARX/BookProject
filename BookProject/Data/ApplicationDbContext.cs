@@ -87,6 +87,15 @@ namespace BookProject.Data
                     Image = "/images/books/resized_" + book.Image
                 });
             }
+            modelBuilder.Entity<OrderStatus>().HasData
+            (
+                new OrderStatus {Id = 1, StatusName = "Pending", StatusId = 1 },
+                new OrderStatus {Id = 2, StatusName = "Shipped", StatusId = 2 },
+                new OrderStatus {Id = 3, StatusName = "Delivered", StatusId = 3 },
+                new OrderStatus {Id = 4, StatusName = "Cancelled", StatusId = 4 },
+                new OrderStatus {Id = 5, StatusName = "Returned", StatusId = 5 },
+                new OrderStatus {Id = 6, StatusName = "Refund", StatusId = 6 }
+            );
         }
     }
 }
