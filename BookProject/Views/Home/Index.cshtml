@@ -90,16 +90,13 @@
                     Author: @book.AuthorName<br>
                     Price: @($"{book.Price:f2}")лв<br>
                 </p>
-                <button type="button" onclick="add(@book.Id),redirectToCart()" class="btn btn-primary">Add to cart</button>
+                <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
             </div>
         </div>
     }
 </div>
 @section Scripts {
     <script>
-        function redirectToCart() {
-            window.location.href = "/Cart/GetUserCart";
-        }
         async function add(bookId) {
             var usernameEl = document.getElementById("username");
             if (usernameEl == null) {

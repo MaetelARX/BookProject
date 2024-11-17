@@ -40,12 +40,29 @@ namespace BookProject.Controllers
         }
         public async Task<IActionResult> Checkout()
         {
-            bool isCheckedOut = await _cartRepo.DoCheckout();
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Checkout(CheckOutModel model)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            bool isCheckedOut = await _cartRepo.DoCheckout(model);
             if (!isCheckedOut)
             {
-                throw new Exception("Something happen in server side");
+                return RedirectToAction(nameof(OrderFailure));
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction(nameof(OrderSuccess));
+        }
+        public async Task<IActionResult> OrderSuccess()
+        {
+            return View();
+        }
+        public async Task<IActionResult> OrderFailure()
+        {
+            return View();
         }
     }
 }

@@ -12,13 +12,22 @@ namespace BookProject.Data
 
             if (!await roleMgr.RoleExistsAsync(Roles.Admin.ToString()))
             {
-                await roleMgr.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
+                var roleResult = await roleMgr.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
+                if (!roleResult.Succeeded)
+                {
+                    Console.WriteLine($"Error creating role Admin: {string.Join(", ", roleResult.Errors.Select(e => e.Description))}");
+                }
             }
 
             if (!await roleMgr.RoleExistsAsync(Roles.User.ToString()))
             {
-                await roleMgr.CreateAsync(new IdentityRole(Roles.User.ToString()));
+                var roleResult = await roleMgr.CreateAsync(new IdentityRole(Roles.User.ToString()));
+                if (!roleResult.Succeeded)
+                {
+                    Console.WriteLine($"Error creating role User: {string.Join(", ", roleResult.Errors.Select(e => e.Description))}");
+                }
             }
+
             var admin = new IdentityUser
             {
                 UserName = "admin@gmail.com",
@@ -42,7 +51,12 @@ namespace BookProject.Data
                     }
                 }
             }
+            else
+            {
+                Console.WriteLine("Admin user already exists.");
+            }
         }
+
 
     }
 }

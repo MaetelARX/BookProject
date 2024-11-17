@@ -138,41 +138,51 @@ namespace BookProject.Repositories
             return data.Count;
 
         }
-        public async Task<bool> DoCheckout()
+        public async Task<bool> DoCheckout(CheckOutModel model)
         {
-            using var transaction = await _db.Database.BeginTransactionAsync();
+            await using var transaction = await _db.Database.BeginTransactionAsync();
             try
             {
                 var userId = GetUserId();
                 if (string.IsNullOrEmpty(userId))
                 {
-                    throw new Exception("User is not logged-in");
+                    throw new Exception("User is not logged in.");
                 }
 
                 var cart = await GetCart(userId);
                 if (cart is null)
                 {
-                    throw new Exception("Invalid cart");
+                    throw new Exception("Invalid cart.");
                 }
 
-                var cartDetail = _db.CartDetails
-                    .Where(x => x.ShoppingCartId == cart.Id).ToList();
+                var cartDetails = await _db.CartDetails
+                    .Where(x => x.ShoppingCartId == cart.Id)
+                    .ToListAsync();
 
-                if (cartDetail.Count == 0)
+                if (!cartDetails.Any())
                 {
-                    throw new Exception("Cart is empty");
+                    throw new Exception("Cart is empty.");
                 }
-
+                var pendingRecord = _db.OrderStatuses.FirstOrDefault(x => x.StatusName == "Pending");
+                if (pendingRecord is null)
+                {
+                    throw new Exception("Order status does not have Pending status");
+                }
                 var order = new Order
                 {
                     UserId = userId,
                     CreateDate = DateTime.UtcNow,
-                    OrderStatusId = 1
+                    Name = model.Name,
+                    Email = model.Email,
+                    MobileNumber = model.MobileNumber,
+                    PaymentMethod = model.PaymentMethod,
+                    Address = model.Address,
+                    IsPaid = false,
+                    OrderStatusId = pendingRecord.Id
                 };
                 _db.Orders.Add(order);
                 await _db.SaveChangesAsync();
-
-                foreach (var item in cartDetail)
+                foreach (var item in cartDetails)
                 {
                     var orderDetail = new OrderDetail
                     {
@@ -183,21 +193,21 @@ namespace BookProject.Repositories
                     };
                     _db.OrderDetails.Add(orderDetail);
                 }
-
                 await _db.SaveChangesAsync();
-
-                _db.CartDetails.RemoveRange(cartDetail);
+                _db.CartDetails.RemoveRange(cartDetails);
                 await _db.SaveChangesAsync();
 
                 await transaction.CommitAsync();
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 await transaction.RollbackAsync();
+                Console.WriteLine($"Checkout failed: {ex.Message}");
                 return false;
             }
         }
+
 
         private string GetUserId()
         {
