@@ -23,7 +23,7 @@ namespace BookProject.Models
         [Required]
         [MaxLength(250)]
         public string? Address { get; set; }
-        public bool? IsPaid { get; set; }
+        public bool IsPaid { get; set; }
         [Required]
         [MaxLength(30)]
         public string? PaymentMethod {  get; set; }

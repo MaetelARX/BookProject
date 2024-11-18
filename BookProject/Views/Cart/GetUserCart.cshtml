@@ -6,6 +6,9 @@
     table {
         border: 2px solid black;
     }
+    td {
+        text-align: center;
+    }
 </style>
 <div style="width:90%; margin:auto" class="mt-4">
     @if (Model != null && Model.CartDetails != null && Model.CartDetails.Count > 0)
@@ -16,7 +19,7 @@
                 <th>Книга</th>
                 <th>Изображение</th>
                 <th>Жанр</th>
-                <th>Количество</th>
+                <th>Цена За Количество</th>
                 <th>Цена</th>
                 <th>Добавяне/Махане на бройка</th>
             </tr>
@@ -35,7 +38,14 @@
                         }
                     </td>
                     <td>@item.Book.Genre.GenreName</td>
-                    <td>@($"{item.Book.Price:f2} X {@item.Quantity}")</td>
+                    @if(item.Quantity > 1)
+                    {
+                        <td>@($"{item.Book.Price:f2} X {@item.Quantity}")</td>
+                    }
+                    else
+                    {
+                        <td>@($"{item.Book.Price:f2}")</td>
+                    }
                     <td>@($"{item.Book.Price*@item.Quantity:f2} лв")</td>
                     <td>
                         <a class="btn btn-info" href="/Cart/AddItem?bookId=@item.BookId&redirect=1">+</a>

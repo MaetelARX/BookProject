@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FiJC6gDh7jrxRYexlhuh/MYbzlIxCh8JJFkwWFOcZN4=",
+  "Hash": "eLPxXP0J9wiEOswCtmN2BJKLKqUTjsImGtGf01mgbWs=",
   "Source": "BookProject",
   "BasePath": "_content/BookProject",
   "Mode": "Default",
@@ -1252,6 +1252,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\background-image\\th-1376384392",
+      "SourceId": "BookProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
+      "BasePath": "_content/BookProject",
+      "RelativePath": "images/background-image/th-1376384392",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background-image\\th-1376384392"
+    },
+    {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\33_strategies_of_war.jpg",
       "SourceId": "BookProject",
       "SourceType": "Discovered",
@@ -1784,12 +1803,12 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\resized_to_my_first_love.jpg"
     },
     {
-      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_tobacco.jpg",
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_tobacco.jfif",
       "SourceId": "BookProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
       "BasePath": "_content/BookProject",
-      "RelativePath": "images/books/resized_tobacco.jpg",
+      "RelativePath": "images/books/resized_tobacco.jfif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1800,7 +1819,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\books\\resized_tobacco.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\books\\resized_tobacco.jfif"
     },
     {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_under_the_yoke.jpg",
@@ -1860,12 +1879,12 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\resized_vinland_saga.jpg"
     },
     {
-      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_war_and_peace.jpeg",
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_war_and_peace.jfif",
       "SourceId": "BookProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
       "BasePath": "_content/BookProject",
-      "RelativePath": "images/books/resized_war_and_peace.jpeg",
+      "RelativePath": "images/books/resized_war_and_peace.jfif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1876,7 +1895,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\books\\resized_war_and_peace.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\books\\resized_war_and_peace.jfif"
     },
     {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_why_world_is.jpg",
@@ -2031,12 +2050,12 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\to_my_first_love.jpg"
     },
     {
-      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\tobacco.jpg",
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\tobacco.jfif",
       "SourceId": "BookProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
       "BasePath": "_content/BookProject",
-      "RelativePath": "images/books/tobacco.jpg",
+      "RelativePath": "images/books/tobacco.jfif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2047,7 +2066,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\books\\tobacco.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\books\\tobacco.jfif"
     },
     {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\under_the_yoke.jpg",
@@ -2107,12 +2126,12 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\vinland_saga.jpg"
     },
     {
-      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\war_and_peace.jpeg",
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\war_and_peace.jfif",
       "SourceId": "BookProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
       "BasePath": "_content/BookProject",
-      "RelativePath": "images/books/war_and_peace.jpeg",
+      "RelativePath": "images/books/war_and_peace.jfif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2123,7 +2142,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\books\\war_and_peace.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\books\\war_and_peace.jfif"
     },
     {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\why_world_is.jpg",

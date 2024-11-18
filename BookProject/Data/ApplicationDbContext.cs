@@ -41,7 +41,7 @@ namespace BookProject.Data
 
             var books = new[]
             {
-            new { Id = 1, BookName = "Война и Мир", AuthorName = "Лев Толстой", Price = 20.50, GenreId = 5, Image = "war_and_peace.jpeg" },
+            new { Id = 1, BookName = "Война и Мир", AuthorName = "Лев Толстой", Price = 20.50, GenreId = 5, Image = "war_and_peace.jfif" },
             new { Id = 2, BookName = "Ана Каренина", AuthorName = "Лев Толстой", Price = 18.00, GenreId = 3, Image = "anna_karenina.jpg" },
             new { Id = 3, BookName = "Владетелят", AuthorName = "Николо Макиавели", Price = 15.00, GenreId = 1, Image = "the_prince.jpg" },
             new { Id = 4, BookName = "Нова земя", AuthorName = "Иван Вазов", Price = 12.50, GenreId = 3, Image = "new_earth.jpg" },
@@ -64,7 +64,7 @@ namespace BookProject.Data
             new { Id = 21, BookName = "Клетниците", AuthorName = "Виктор Юго", Price = 30.00, GenreId = 5, Image = "the_wretch.jpg" },
             new { Id = 22, BookName = "Борба", AuthorName = "Христо Ботев", Price = 25.00, GenreId = 7, Image = "struggle.jpg" },
             new { Id = 23, BookName = "До моето първо либе", AuthorName = "Христо Ботев", Price = 21.99, GenreId = 7, Image = "to_my_first_love.jpg" },
-            new { Id = 24, BookName = "Тютюн", AuthorName = "Димитър Димов", Price = 40.00, GenreId = 1, Image = "tobacco.jpg" },
+            new { Id = 24, BookName = "Тютюн", AuthorName = "Димитър Димов", Price = 40.00, GenreId = 1, Image = "tobacco.jfif" },
         };
 
             foreach (var book in books)
