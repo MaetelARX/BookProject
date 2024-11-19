@@ -4,6 +4,7 @@ using BookProject.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241118220645_mig-stock-MGT")]
+    partial class migstockMGT
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,9 +52,6 @@ namespace BookProject.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("GenreId");
@@ -66,8 +66,7 @@ namespace BookProject.Migrations
                             BookName = "Война и Мир",
                             GenreId = 5,
                             Image = "/images/books/resized_war_and_peace.jfif",
-                            Price = 20.5,
-                            Quantity = 0
+                            Price = 20.5
                         },
                         new
                         {
@@ -76,8 +75,7 @@ namespace BookProject.Migrations
                             BookName = "Ана Каренина",
                             GenreId = 3,
                             Image = "/images/books/resized_anna_karenina.jpg",
-                            Price = 18.0,
-                            Quantity = 0
+                            Price = 18.0
                         },
                         new
                         {
@@ -86,8 +84,7 @@ namespace BookProject.Migrations
                             BookName = "Владетелят",
                             GenreId = 1,
                             Image = "/images/books/resized_the_prince.jpg",
-                            Price = 15.0,
-                            Quantity = 0
+                            Price = 15.0
                         },
                         new
                         {
@@ -96,8 +93,7 @@ namespace BookProject.Migrations
                             BookName = "Нова земя",
                             GenreId = 3,
                             Image = "/images/books/resized_new_earth.jpg",
-                            Price = 12.5,
-                            Quantity = 0
+                            Price = 12.5
                         },
                         new
                         {
@@ -106,8 +102,7 @@ namespace BookProject.Migrations
                             BookName = "Държавата",
                             GenreId = 4,
                             Image = "/images/books/resized_the_republic.jpg",
-                            Price = 14.0,
-                            Quantity = 0
+                            Price = 14.0
                         },
                         new
                         {
@@ -116,8 +111,7 @@ namespace BookProject.Migrations
                             BookName = "Фауст",
                             GenreId = 3,
                             Image = "/images/books/resized_faust.jpg",
-                            Price = 16.0,
-                            Quantity = 0
+                            Price = 16.0
                         },
                         new
                         {
@@ -126,8 +120,7 @@ namespace BookProject.Migrations
                             BookName = "Воля за власт",
                             GenreId = 4,
                             Image = "/images/books/resized_will_to_power.jpg",
-                            Price = 17.989999999999998,
-                            Quantity = 0
+                            Price = 17.989999999999998
                         },
                         new
                         {
@@ -136,8 +129,7 @@ namespace BookProject.Migrations
                             BookName = "Защо светът е такъв какъвто е",
                             GenreId = 4,
                             Image = "/images/books/resized_why_world_is.jpg",
-                            Price = 22.989999999999998,
-                            Quantity = 0
+                            Price = 22.989999999999998
                         },
                         new
                         {
@@ -146,8 +138,7 @@ namespace BookProject.Migrations
                             BookName = "48-те закона на властта",
                             GenreId = 1,
                             Image = "/images/books/resized_48_laws_of_power.jpg",
-                            Price = 19.989999999999998,
-                            Quantity = 0
+                            Price = 19.989999999999998
                         },
                         new
                         {
@@ -156,8 +147,7 @@ namespace BookProject.Migrations
                             BookName = "Под Игото",
                             GenreId = 5,
                             Image = "/images/books/resized_under_the_yoke.jpg",
-                            Price = 21.989999999999998,
-                            Quantity = 0
+                            Price = 21.989999999999998
                         },
                         new
                         {
@@ -166,8 +156,7 @@ namespace BookProject.Migrations
                             BookName = "Песен за огън и лед",
                             GenreId = 6,
                             Image = "/images/books/resized_song_of_ice_and_water.jpg",
-                            Price = 39.990000000000002,
-                            Quantity = 0
+                            Price = 39.990000000000002
                         },
                         new
                         {
@@ -176,8 +165,7 @@ namespace BookProject.Migrations
                             BookName = "Берсерк",
                             GenreId = 6,
                             Image = "/images/books/resized_berserk.jpg",
-                            Price = 109.98999999999999,
-                            Quantity = 0
+                            Price = 109.98999999999999
                         },
                         new
                         {
@@ -186,8 +174,7 @@ namespace BookProject.Migrations
                             BookName = "Вагабонд",
                             GenreId = 5,
                             Image = "/images/books/resized_vagabond.png",
-                            Price = 59.990000000000002,
-                            Quantity = 0
+                            Price = 59.990000000000002
                         },
                         new
                         {
@@ -196,8 +183,7 @@ namespace BookProject.Migrations
                             BookName = "Винланд Сага",
                             GenreId = 1,
                             Image = "/images/books/resized_vinland_saga.jpg",
-                            Price = 19.989999999999998,
-                            Quantity = 0
+                            Price = 19.989999999999998
                         },
                         new
                         {
@@ -206,8 +192,7 @@ namespace BookProject.Migrations
                             BookName = "Железен Пламък",
                             GenreId = 1,
                             Image = "/images/books/resized_iron_flame.jpg",
-                            Price = 33.0,
-                            Quantity = 0
+                            Price = 33.0
                         },
                         new
                         {
@@ -216,8 +201,7 @@ namespace BookProject.Migrations
                             BookName = "То",
                             GenreId = 2,
                             Image = "/images/books/resized_it.jpg",
-                            Price = 19.989999999999998,
-                            Quantity = 0
+                            Price = 19.989999999999998
                         },
                         new
                         {
@@ -226,8 +210,7 @@ namespace BookProject.Migrations
                             BookName = "33-те стратегии за войната",
                             GenreId = 1,
                             Image = "/images/books/resized_33_strategies_of_war.jpg",
-                            Price = 33.0,
-                            Quantity = 0
+                            Price = 33.0
                         },
                         new
                         {
@@ -236,8 +219,7 @@ namespace BookProject.Migrations
                             BookName = "Идиот",
                             GenreId = 5,
                             Image = "/images/books/resized_idiot.jpg",
-                            Price = 59.990000000000002,
-                            Quantity = 0
+                            Price = 59.990000000000002
                         },
                         new
                         {
@@ -246,8 +228,7 @@ namespace BookProject.Migrations
                             BookName = "Престъпление и наказание",
                             GenreId = 5,
                             Image = "/images/books/resized_crime_and_punishment.jpg",
-                            Price = 30.0,
-                            Quantity = 0
+                            Price = 30.0
                         },
                         new
                         {
@@ -256,8 +237,7 @@ namespace BookProject.Migrations
                             BookName = "Евгений Онегин",
                             GenreId = 5,
                             Image = "/images/books/resized_eugene_onegin.jpg",
-                            Price = 50.0,
-                            Quantity = 0
+                            Price = 50.0
                         },
                         new
                         {
@@ -266,8 +246,7 @@ namespace BookProject.Migrations
                             BookName = "Клетниците",
                             GenreId = 5,
                             Image = "/images/books/resized_the_wretch.jpg",
-                            Price = 30.0,
-                            Quantity = 0
+                            Price = 30.0
                         },
                         new
                         {
@@ -276,8 +255,7 @@ namespace BookProject.Migrations
                             BookName = "Борба",
                             GenreId = 7,
                             Image = "/images/books/resized_struggle.jpg",
-                            Price = 25.0,
-                            Quantity = 0
+                            Price = 25.0
                         },
                         new
                         {
@@ -286,8 +264,7 @@ namespace BookProject.Migrations
                             BookName = "До моето първо либе",
                             GenreId = 7,
                             Image = "/images/books/resized_to_my_first_love.jpg",
-                            Price = 21.989999999999998,
-                            Quantity = 0
+                            Price = 21.989999999999998
                         },
                         new
                         {
@@ -296,8 +273,7 @@ namespace BookProject.Migrations
                             BookName = "Тютюн",
                             GenreId = 1,
                             Image = "/images/books/resized_tobacco.jfif",
-                            Price = 40.0,
-                            Quantity = 0
+                            Price = 40.0
                         });
                 });
 
