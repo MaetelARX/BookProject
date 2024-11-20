@@ -1,6 +1,8 @@
 using BookProject.Data;
 using BookProject.Repositories;
 using BookProject.Repositories.Interfaces;
+using BookProject.Utilities;
+using BookProject.Utilities.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,6 +23,9 @@ builder.Services.AddTransient<IHomeRepository, HomeRepository>();
 builder.Services.AddTransient<ICartRepository, CartRepository>();
 builder.Services.AddTransient<IUserOrderRepository, UserOrderRepository>();
 builder.Services.AddTransient<IStockRepository, StockRepository>();
+builder.Services.AddTransient<IGenreRepository, GenreRepository>();
+builder.Services.AddTransient<IFileService, FileService>();
+builder.Services.AddTransient<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
