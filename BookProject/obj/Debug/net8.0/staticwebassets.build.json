@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eLPxXP0J9wiEOswCtmN2BJKLKqUTjsImGtGf01mgbWs=",
+  "Hash": "mHMc4DPZMQEQznwsId9/9zd1RwIfUydpnCvN0eWVxQw=",
   "Source": "BookProject",
   "BasePath": "_content/BookProject",
   "Mode": "Default",
@@ -1347,6 +1347,25 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\berserk.jpg"
     },
     {
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\captain_nemo.jpg",
+      "SourceId": "BookProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
+      "BasePath": "_content/BookProject",
+      "RelativePath": "images/books/captain_nemo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\captain_nemo.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\crime_and_punishment.jpg",
       "SourceId": "BookProject",
       "SourceType": "Discovered",
@@ -1554,6 +1573,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\books\\resized_berserk.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_captain_nemo.jpg",
+      "SourceId": "BookProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
+      "BasePath": "_content/BookProject",
+      "RelativePath": "images/books/resized_captain_nemo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\resized_captain_nemo.jpg"
     },
     {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_crime_and_punishment.jpg",

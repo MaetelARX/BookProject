@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\books\\berserk.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\captain_nemo.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\captain_nemo.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\crime_and_punishment.jpg",
       "PackagePath": "staticwebassets\\images\\books\\crime_and_punishment.jpg"
     },
@@ -79,6 +83,10 @@
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_berserk.jpg",
       "PackagePath": "staticwebassets\\images\\books\\resized_berserk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_captain_nemo.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\resized_captain_nemo.jpg"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\resized_crime_and_punishment.jpg",
