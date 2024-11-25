@@ -7,27 +7,30 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookProject.Controllers
 {
-    [Authorize(Roles = nameof(Roles.Admin))]
     public class BookController : Controller
     {
 		private readonly IBookRepository _bookRepo;
 		private readonly IGenreRepository _genreRepo;
 		private readonly IFileService _fileService;
 		private readonly IWebHostEnvironment _environment;
-		public BookController(IBookRepository bookRepo, IGenreRepository genreRepo, IFileService fileService, IWebHostEnvironment environment)
+		private readonly IDetailsRepository _detailRepo;
+		public BookController(IBookRepository bookRepo, IGenreRepository genreRepo,
+			IFileService fileService, IWebHostEnvironment environment, IDetailsRepository detailsRepository)
 		{
 			_bookRepo = bookRepo;
 			_genreRepo = genreRepo;
 			_fileService = fileService;
 			_environment = environment;
+			_detailRepo = detailsRepository;
 		}
-
-		public async Task<IActionResult> Index()
+        [Authorize(Roles = nameof(Roles.Admin))]
+        public async Task<IActionResult> Index()
         {
             var books = await _bookRepo.GetBooks();
             return View(books);
         }
 
+        [Authorize(Roles = nameof(Roles.Admin))]
         [HttpGet]
         public async Task<IActionResult> AddBook()
         {
@@ -43,8 +46,8 @@ namespace BookProject.Controllers
             };
             return View(bookToAdd);
         }
-
-		[HttpPost]
+        [Authorize(Roles = nameof(Roles.Admin))]
+        [HttpPost]
 		public async Task<IActionResult> AddBook(BookDTO bookToAdd)
 		{
 			var genreSelectList = (await _genreRepo.GetGenres()).Select
@@ -107,9 +110,9 @@ namespace BookProject.Controllers
 			}
 		}
 
+        [Authorize(Roles = nameof(Roles.Admin))]
 
-
-		[HttpGet]
+        [HttpGet]
         public async Task<IActionResult> UpdateBook(int id)
         {
             var book = await _bookRepo.GetBookById(id);
@@ -136,8 +139,8 @@ namespace BookProject.Controllers
             };
             return View(bookToUpdate);
         }
-
-		[HttpPost]
+        [Authorize(Roles = nameof(Roles.Admin))]
+        [HttpPost]
 		public async Task<IActionResult> UpdateBook(BookDTO bookToUpdate)
 		{
 			var genreSelectList = (await _genreRepo.GetGenres()).Select(genre =>
@@ -171,7 +174,7 @@ namespace BookProject.Controllers
 						throw new InvalidOperationException($"Only {string.Join(", ", allowedExtensions)} files allowed");
 					}
 					string tempFilePath = Path.Combine(_environment.WebRootPath, "temp", $"{Guid.NewGuid()}{extension}");
-					Directory.CreateDirectory(Path.GetDirectoryName(tempFilePath)); // Ensure the temp directory exists
+					Directory.CreateDirectory(Path.GetDirectoryName(tempFilePath));
 					using (var stream = new FileStream(tempFilePath, FileMode.Create))
 					{
 						await bookToUpdate.ImageFile.CopyToAsync(stream);
@@ -223,7 +226,8 @@ namespace BookProject.Controllers
 			}
 		}
 
-		public async Task<IActionResult> DeleteBook(int id)
+        [Authorize(Roles = nameof(Roles.Admin))]
+        public async Task<IActionResult> DeleteBook(int id)
         {
             try
             {
@@ -254,6 +258,64 @@ namespace BookProject.Controllers
 				TempData["errorMessage"] = "Error on deleting the data";
 			}
 			return RedirectToAction(nameof(Index));
+		}
+
+        [Authorize(Roles = nameof(Roles.Admin))]
+        [HttpGet]
+		public async Task<IActionResult> AddDetails(int bookId)
+		{
+			var book = await _bookRepo.GetBookById(bookId);
+			if (book == null)
+			{
+				TempData["errorMessage"] = $"Book with the id: {bookId} is not found";
+				return RedirectToAction(nameof(Index));
+			}
+			Details details = new()
+			{
+				BookId = bookId,
+			};
+			return View(details);
+		}
+
+        [Authorize(Roles = nameof(Roles.Admin))]
+        [HttpPost]
+        public async Task<IActionResult> AddDetails(Details details)
+        {
+            if (!ModelState.IsValid)
+            {
+                foreach (var modelState in ViewData.ModelState.Values)
+                {
+                    foreach (var error in modelState.Errors)
+                    {
+                        Console.WriteLine($"Error: {error.ErrorMessage}");
+                    }
+                }
+                TempData["errorMessage"] = "Please fix the errors before proceeding.";
+                return View(details);
+            }
+            try
+            {
+                await _detailRepo.AddDetails(details);
+                TempData["successMessage"] = "The details are added successfully";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception)
+            {
+                TempData["errorMessage"] = "Error while adding details";
+                return View(details);
+            }
+        }
+
+        [Authorize(Roles = nameof(Roles.User))]
+        public async Task<IActionResult> ViewDetails(int bookId)
+		{
+			var details = await _detailRepo.GetDetailsByBookId(bookId);
+			if (details == null)
+			{
+				TempData["errorMessage"] = $"No details found for the book with ID {bookId}";
+				return RedirectToAction(nameof(Index));
+			}
+			return View(details);
 		}
 	}
 }

@@ -16,6 +16,7 @@
 			<th>Genre</th>
 			<th>Price</th>
 			<th>Action</th>
+			<th>Details Action</th>
 		</tr>
 
 		@foreach (var book in Model)
@@ -39,7 +40,11 @@
 					   asp-route-id="@book.Id" class="btn btn-danger"
 					   onclick="return window.confirm('Are you sure?')">Delete</a>
 				</td>
-			</tr>
+					<td>
+						<a asp-action="ViewDetails" asp-route-bookId="@book.Id" class="btn btn-info">View Details</a>
+						<a asp-action="AddDetails" asp-route-bookId="@book.Id" class="btn btn-primary">Add Details</a>
+					</td>
+					</tr>
 		}
 	</table>
 }

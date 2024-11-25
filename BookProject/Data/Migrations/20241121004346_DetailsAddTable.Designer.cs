@@ -4,6 +4,7 @@ using BookProject.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241121004346_DetailsAddTable")]
+    partial class DetailsAddTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -330,7 +333,7 @@ namespace BookProject.Migrations
                     b.ToTable("CartDetails");
                 });
 
-            modelBuilder.Entity("BookProject.Models.Details", b =>
+            modelBuilder.Entity("BookProject.Models.Detail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -343,8 +346,8 @@ namespace BookProject.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<DateTime?>("PublicationDate")
                         .HasColumnType("datetime2");
@@ -828,7 +831,7 @@ namespace BookProject.Migrations
                     b.Navigation("ShoppingCart");
                 });
 
-            modelBuilder.Entity("BookProject.Models.Details", b =>
+            modelBuilder.Entity("BookProject.Models.Detail", b =>
                 {
                     b.HasOne("BookProject.Models.Book", "book")
                         .WithMany()

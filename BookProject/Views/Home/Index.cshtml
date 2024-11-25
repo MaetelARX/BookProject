@@ -12,24 +12,50 @@
             left: 100%;
             margin-top: -1px;
         }
-        body {
+
+    body {
         background-color: #f1f0ef;
-        }
+    }
+
+    .card {
+        overflow: hidden;
+    }
+
+    .card-img-top {
+        transition: transform 0.5s ease-in-out, filter 1s linear;
+        transform-origin: center;
+        filter: brightness(100%);
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.3);
+    }
+
+    .details-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    .card:hover .details-button {
+        display: block;
+    }
 </style>
-<div class ="my-2">
-    <form asp-action="Index"class="row row-cols-lg-auto g-3 align-items-center">
 
-
-  <div class="col-12 mx-4">
+<div class="my-2">
+    <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12 mx-4">
             <label class="visually-hidden" for="genreId">Genres</label>
-    <select class="form-select" id="genreId" name="genreId">
-      <option selected>Избери жанр</option>
-                @foreach(var genre in Model.Genres)
+            <select class="form-select" id="genreId" name="genreId">
+                <option selected>Избери жанр</option>
+                @foreach (var genre in Model.Genres)
                 {
-                    <option selected ="@(genre.Id == Model.GenreId)" value="@genre.Id">@genre.GenreName</option>
+                    <option selected="@(genre.Id == Model.GenreId)" value="@genre.Id">@genre.GenreName</option>
                 }
-    </select>
-  </div>
+            </select>
+        </div>
 
         <div class="col-12">
             <label class="visually-hidden" for="sterm">Search by title</label>
@@ -38,10 +64,10 @@
                 <input type="text" class="form-control" value="@Model.STerm" id="sterm" name="sterm" placeholder="Търси по име">
             </div>
         </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Търси</button>
-    <a href="/Home/Index" class="btn btn-dark">Ресетни</a>
-  </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Търси</button>
+            <a href="/Home/Index" class="btn btn-dark">Ресетни</a>
+        </div>
         <div class="col-12 mx-4">
             <label class="visually-hidden" for="sortBy">Сортирай по:</label>
             <div class="dropdown">
@@ -76,15 +102,13 @@
                 </ul>
             </div>
         </div>
-
-</form>
+    </form>
 </div>
-
 
 <div class="w-100 mt-4 d-flex flex-wrap">
     @foreach (var book in Model.Books)
     {
-        <div class="card mx-4 mb-4" style="width: 17rem;">
+        <div class="book-card card mx-4 mb-4" style="width: 17rem; position: relative; overflow: hidden; transition: transform 0.3s ease-in-out;">
             <img src="@book.Image" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">@book.BookName</h5>
@@ -92,7 +116,6 @@
                     Genre: @book.GenreName<br>
                     Author: @book.AuthorName<br>
                     Price: @($"{book.Price:f2}")лв<br>
-
                 </p>
                 @if (book.Quantity > 0)
                 {
@@ -102,13 +125,14 @@
                 }
                 else
                 {
-                    <span style="border: 1px solid;padding: 5px 8px;color:
-                        red;border-radius: 5px;">Out of stock</span>
+                    <span style="border: 1px solid; padding: 5px 8px; color: red; border-radius: 5px;">Out of stock</span>
                 }
             </div>
+            <button class="details-button btn btn-dark" onclick="location.href='@Url.Action("ViewDetails", "Book", new { bookId = book.Id })'">Details</button>
         </div>
     }
 </div>
+
 @section Scripts {
     <script>
         async function add(bookId) {
@@ -129,6 +153,7 @@
                 console.log("Error adding item to cart:", err);
             }
         }
+
         document.addEventListener('DOMContentLoaded', function () {
             var dropdowns = document.querySelectorAll('.dropdown-submenu');
             dropdowns.forEach(function (dropdown) {
@@ -141,7 +166,27 @@
                     if (submenu) submenu.classList.remove('show');
                 });
             });
+            document.querySelectorAll('.card-img-top').forEach(function (image) {
+                let timer;
+                let brightness = 100;
+
+                image.addEventListener('mouseenter', function () {
+                    timer = setInterval(() => {
+                        if (brightness < 200) {
+                            brightness += 2;
+                            image.style.filter = `brightness(${brightness}%)`;
+                        } else {
+                            clearInterval(timer);
+                        }
+                    }, 50);
+                });
+
+                image.addEventListener('mouseleave', function () {
+                    clearInterval(timer);
+                    brightness = 100;
+                    image.style.filter = `brightness(${brightness}%)`;
+                });
+            });
         });
     </script>
 }
-

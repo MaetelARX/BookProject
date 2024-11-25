@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\books\\48_laws_of_power.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\EpicInstaller-15.17.1.msi",
+      "PackagePath": "staticwebassets\\images\\books\\EpicInstaller-15.17.1.msi"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\anna_karenina.jpg",
       "PackagePath": "staticwebassets\\images\\books\\anna_karenina.jpg"
     },
