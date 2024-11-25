@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ny9E6z6bv/NV0lPWGRSxc8TkOsAKmPUOBEz7kB+4YR8=",
+  "Hash": "mHMc4DPZMQEQznwsId9/9zd1RwIfUydpnCvN0eWVxQw=",
   "Source": "BookProject",
   "BasePath": "_content/BookProject",
   "Mode": "Default",
@@ -1383,25 +1383,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\books\\crime_and_punishment.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\EpicInstaller-15.17.1.msi",
-      "SourceId": "BookProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\",
-      "BasePath": "_content/BookProject",
-      "RelativePath": "images/books/EpicInstaller-15.17.1.msi",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\books\\EpicInstaller-15.17.1.msi"
     },
     {
       "Identity": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\eugene_onegin.jpg",

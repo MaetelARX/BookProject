@@ -1,6 +1,5 @@
 ﻿@model BookDisplayModel
 @{
-
 }
 <style>
     .dropdown-submenu {
@@ -27,8 +26,8 @@
         filter: brightness(100%);
     }
 
-    .card:hover .card-img-top {
-        transform: scale(1.3);
+    .card:hover {
+        transform: scale(1.07);
     }
 
     .details-button {
@@ -42,66 +41,15 @@
     .card:hover .details-button {
         display: block;
     }
+
+    .add-to-cart-animation {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
 </style>
 
 <div class="my-2">
     <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
-        <div class="col-12 mx-4">
-            <label class="visually-hidden" for="genreId">Genres</label>
-            <select class="form-select" id="genreId" name="genreId">
-                <option selected>Избери жанр</option>
-                @foreach (var genre in Model.Genres)
-                {
-                    <option selected="@(genre.Id == Model.GenreId)" value="@genre.Id">@genre.GenreName</option>
-                }
-            </select>
-        </div>
-
-        <div class="col-12">
-            <label class="visually-hidden" for="sterm">Search by title</label>
-            <div class="input-group">
-                <div class="input-group-text"></div>
-                <input type="text" class="form-control" value="@Model.STerm" id="sterm" name="sterm" placeholder="Търси по име">
-            </div>
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Търси</button>
-            <a href="/Home/Index" class="btn btn-dark">Ресетни</a>
-        </div>
-        <div class="col-12 mx-4">
-            <label class="visually-hidden" for="sortBy">Сортирай по:</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortByDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    @switch (Model.SortBy)
-                    {
-                        case "PriceAsc":
-                        case "PriceDesc":
-                            <text>Цена</text>
-                            break;
-                        case "Title":
-                            <text>Заглавие</text>
-                            break;
-                        case "Author":
-                            <text>Автор</text>
-                            break;
-                        default:
-                            <text>Сортирай по</text>
-                            break;
-                    }
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="sortByDropdown">
-                    <li><a class="dropdown-item" href="?sortBy=Title">Заглавие</a></li>
-                    <li><a class="dropdown-item" href="?sortBy=Author">Автор</a></li>
-                    <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">Цена</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="?sortBy=PriceAsc">Възходящ ред</a></li>
-                            <li><a class="dropdown-item" href="?sortBy=PriceDesc">Низходящ ред</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </form>
 </div>
 
@@ -119,7 +67,7 @@
                 </p>
                 @if (book.Quantity > 0)
                 {
-                    <button type="button" onclick="add(@book.Id)" class="btn btn-primary">
+                    <button type="button" onclick="add(@book.Id, this)" class="btn btn-primary">
                         Add to cart
                     </button>
                 }
@@ -135,7 +83,7 @@
 
 @section Scripts {
     <script>
-        async function add(bookId) {
+        async function add(bookId, buttonElement) {
             var usernameEl = document.getElementById("username");
             if (usernameEl == null) {
                 window.location.href = "/Identity/Account/Login";
@@ -148,6 +96,12 @@
                     var result = await response.json();
                     var cartCountEl = document.getElementById("cartCount");
                     cartCountEl.innerHTML = result;
+
+                    buttonElement.classList.add('add-to-cart-animation');
+
+                    setTimeout(function() {
+                        buttonElement.classList.remove('add-to-cart-animation');
+                    }, 500);
                 }
             } catch (err) {
                 console.log("Error adding item to cart:", err);

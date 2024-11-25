@@ -305,8 +305,6 @@ namespace BookProject.Controllers
                 return View(details);
             }
         }
-
-        [Authorize(Roles = nameof(Roles.User))]
         public async Task<IActionResult> ViewDetails(int bookId)
 		{
 			var details = await _detailRepo.GetDetailsByBookId(bookId);

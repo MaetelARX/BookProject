@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\models\\details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\models\\details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\views\\book\\adddetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\views\\book\\adddetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\models\\details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\models\\details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\views\\book\\viewdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\views\\book\\viewdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\views\\book\\adddetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\views\\book\\adddetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\repositories\\detailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\repositories\\detailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81A3316-62D6-47C0-9B3A-FCD61F4D1322}|BookProject\\BookProject.csproj|c:\\users\\konos\\onedrive\\documents\\github\\bookproject\\bookproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,20 +46,32 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "ViewDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Views\\Book\\ViewDetails.cshtml",
+              "RelativeDocumentMoniker": "BookProject\\Views\\Book\\ViewDetails.cshtml",
+              "ToolTip": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Views\\Book\\ViewDetails.cshtml",
+              "RelativeToolTip": "BookProject\\Views\\Book\\ViewDetails.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T19:10:48.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "BookProject\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Controllers\\BookController.cs*",
-              "RelativeToolTip": "BookProject\\Controllers\\BookController.cs*",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAqwBsBAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Controllers\\BookController.cs",
+              "RelativeToolTip": "BookProject\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAB4BAAAAAAAAAAAQwDQBAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T19:00:47.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Details.cs",
               "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Models\\Details.cs",
               "RelativeDocumentMoniker": "BookProject\\Models\\Details.cs",
@@ -63,8 +79,7 @@
               "RelativeToolTip": "BookProject\\Models\\Details.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T18:59:38.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T18:59:38.818Z"
             },
             {
               "$type": "Document",
@@ -76,12 +91,11 @@
               "RelativeToolTip": "BookProject\\Views\\Book\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T18:57:53.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T18:57:53.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Program.cs",
               "RelativeDocumentMoniker": "BookProject\\Program.cs",
@@ -89,12 +103,11 @@
               "RelativeToolTip": "BookProject\\Program.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T18:49:38.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T18:49:38.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DetailsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Repositories\\DetailsRepository.cs",
               "RelativeDocumentMoniker": "BookProject\\Repositories\\DetailsRepository.cs",
@@ -102,12 +115,11 @@
               "RelativeToolTip": "BookProject\\Repositories\\DetailsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T18:48:54.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T18:48:54.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "AddDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Views\\Book\\AddDetails.cshtml",
               "RelativeDocumentMoniker": "BookProject\\Views\\Book\\AddDetails.cshtml",
@@ -115,12 +127,11 @@
               "RelativeToolTip": "BookProject\\Views\\Book\\AddDetails.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T18:46:27.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T18:46:27.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "BookProject\\Views\\Home\\Index.cshtml",
@@ -128,8 +139,7 @@
               "RelativeToolTip": "BookProject\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAJwAAAAAAAAAAAAAAL8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T20:54:44.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T20:54:44.532Z"
             }
           ]
         }

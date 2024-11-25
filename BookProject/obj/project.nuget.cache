@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2N3Qu/sJAD0=",
+  "dgSpecHash": "24+BUEZcT8M=",
   "success": true,
   "projectFilePath": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\BookProject.csproj",
   "expectedPackageFiles": [
@@ -101,6 +101,8 @@
     "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\8.0.10\\microsoft.extensions.fileproviders.embedded.8.0.10.nupkg.sha512",
     "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.10\\microsoft.extensions.identity.core.8.0.10.nupkg.sha512",
     "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.10\\microsoft.extensions.identity.stores.8.0.10.nupkg.sha512",
+    "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.localization\\8.0.10\\microsoft.extensions.localization.8.0.10.nupkg.sha512",
+    "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.10\\microsoft.extensions.localization.abstractions.8.0.10.nupkg.sha512",
     "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
     "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\Konos\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
