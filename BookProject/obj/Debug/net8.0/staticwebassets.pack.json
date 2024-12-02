@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\books\\48_laws_of_power.jpg"
     },
     {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\711cfdbd-d878-4c7a-a2b3-6fb6b1184c5e.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\711cfdbd-d878-4c7a-a2b3-6fb6b1184c5e.jpg"
+    },
+    {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\anna_karenina.jpg",
       "PackagePath": "staticwebassets\\images\\books\\anna_karenina.jpg"
     },
@@ -219,6 +223,14 @@
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\books\\will_to_power.jpg",
       "PackagePath": "staticwebassets\\images\\books\\will_to_power.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\flags\\bg_flag.png",
+      "PackagePath": "staticwebassets\\images\\flags\\bg_flag.png"
+    },
+    {
+      "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\images\\flags\\en_flag.png",
+      "PackagePath": "staticwebassets\\images\\flags\\en_flag.png"
     },
     {
       "Id": "C:\\Users\\Konos\\OneDrive\\Documents\\GitHub\\BookProject\\BookProject\\wwwroot\\js\\site.js",

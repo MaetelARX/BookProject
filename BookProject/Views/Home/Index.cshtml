@@ -91,7 +91,7 @@
             }
 
             try {
-                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
+                var response = await fetch(/Cart/AddItem?bookId=${bookId});
                 if (response.status == 200) {
                     var result = await response.json();
                     var cartCountEl = document.getElementById("cartCount");
@@ -99,7 +99,7 @@
 
                     buttonElement.classList.add('add-to-cart-animation');
 
-                    setTimeout(function() {
+                    setTimeout(function () {
                         buttonElement.classList.remove('add-to-cart-animation');
                     }, 500);
                 }
@@ -128,7 +128,7 @@
                     timer = setInterval(() => {
                         if (brightness < 200) {
                             brightness += 2;
-                            image.style.filter = `brightness(${brightness}%)`;
+                            image.style.filter = brightness(${brightness}%);
                         } else {
                             clearInterval(timer);
                         }
@@ -138,7 +138,7 @@
                 image.addEventListener('mouseleave', function () {
                     clearInterval(timer);
                     brightness = 100;
-                    image.style.filter = `brightness(${brightness}%)`;
+                    image.style.filter = brightness(${brightness}%);
                 });
             });
         });
