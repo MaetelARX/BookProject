@@ -225,6 +225,27 @@ namespace BookProject.Repositories
                 return false;
             }
         }
+        public async Task<int> GetBookQuantityInCart(int bookId)
+        {
+            var userId = GetUserId();
+            if (string.IsNullOrEmpty(userId))
+            {
+                throw new UnauthorizedAccessException("User is not logged in.");
+            }
+
+            var cart = await GetCart(userId);
+            if (cart == null)
+            {
+                return 0;
+            }
+
+            var cartItem = await _db.CartDetails
+                .Where(cd => cd.ShoppingCartId == cart.Id && cd.BookId == bookId)
+                .FirstOrDefaultAsync();
+
+            return cartItem?.Quantity ?? 0;
+        }
+
 
 
         private string GetUserId()

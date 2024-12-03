@@ -56,6 +56,20 @@ namespace BookProject.Controllers
             }
             return RedirectToAction(nameof(OrderSuccess));
         }
+        [HttpGet]
+        public async Task<IActionResult> GetBookQuantity(int bookId)
+        {
+            try
+            {
+                int quantity = await _cartRepo.GetBookQuantityInCart(bookId);
+                return Ok(quantity);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
         public async Task<IActionResult> OrderSuccess()
         {
             return View();

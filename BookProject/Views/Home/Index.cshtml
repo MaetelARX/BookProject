@@ -16,6 +16,21 @@
         background-color: #f1f0ef;
     }
 
+    .out-of-stock-button {
+        color: red;
+        background-color: transparent;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 5px 15px;
+        cursor: not-allowed;
+    }
+
+        .out-of-stock-button:hover {
+            color: red;
+            background-color: transparent;
+            border-color: red;
+        }
+
     .card {
         overflow: hidden;
     }
@@ -47,6 +62,68 @@
         transition: transform 0.3s ease-in-out;
     }
 </style>
+<div class="my-2">
+    <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12 mx-4">
+            <label class="visually-hidden" for="genreId">Genres</label>
+            <select class="form-select" id="genreId" name="genreId">
+                <option selected>Избери жанр</option>
+                @foreach (var genre in Model.Genres)
+                {
+                    <option selected="@(genre.Id == Model.GenreId)" value="@genre.Id">@genre.GenreName</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-12">
+            <label class="visually-hidden" for="sterm">Search by title</label>
+            <div class="input-group">
+                <div class="input-group-text"></div>
+                <input type="text" class="form-control" value="@Model.STerm" id="sterm" name="sterm" placeholder="Търси по име">
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Търси</button>
+            <a href="/Home/Index" class="btn btn-dark">Ресетни</a>
+        </div>
+
+        <div class="col-12 mx-4">
+            <label class="visually-hidden" for="sortBy">Сортирай по:</label>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortByDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    @switch (Model.SortBy)
+                    {
+                        case "PriceAsc":
+                        case "PriceDesc":
+                            <text>Цена</text>
+                            break;
+                        case "Title":
+                            <text>Заглавие</text>
+                            break;
+                        case "Author":
+                            <text>Автор</text>
+                            break;
+                        default:
+                            <text>Сортирай по</text>
+                            break;
+                    }
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="sortByDropdown">
+                    <li><a class="dropdown-item" href="?sortBy=Title">Заглавие</a></li>
+                    <li><a class="dropdown-item" href="?sortBy=Author">Автор</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Цена</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="?sortBy=PriceAsc">Възходящ ред</a></li>
+                            <li><a class="dropdown-item" href="?sortBy=PriceDesc">Низходящ ред</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
 
 <div class="my-2">
     <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
@@ -67,20 +144,19 @@
                 </p>
                 @if (book.Quantity > 0)
                 {
-                    <button type="button" onclick="add(@book.Id, this)" class="btn btn-primary">
+                    <button type="button" onclick="add(@book.Id, this)" class="btn btn-primary" data-quantity="@book.Quantity">
                         Add to cart
                     </button>
                 }
                 else
                 {
-                    <span style="border: 1px solid; padding: 5px 8px; color: red; border-radius: 5px;">Out of stock</span>
+                    <button type="button" class="btn out-of-stock-button" disabled>Out of stock</button>
                 }
             </div>
             <button class="details-button btn btn-dark" onclick="location.href='@Url.Action("ViewDetails", "Book", new { bookId = book.Id })'">Details</button>
         </div>
     }
 </div>
-
 @section Scripts {
     <script>
         async function add(bookId, buttonElement) {
@@ -90,8 +166,14 @@
                 return;
             }
 
+            let currentQuantity = parseInt(buttonElement.getAttribute('data-quantity'));
+
+            if (currentQuantity <= 0) {
+                return;
+            }
+
             try {
-                var response = await fetch(/Cart/AddItem?bookId=${bookId});
+                var response = await fetch(`/Cart/AddItem?bookId=${bookId}`);
                 if (response.status == 200) {
                     var result = await response.json();
                     var cartCountEl = document.getElementById("cartCount");
@@ -102,13 +184,26 @@
                     setTimeout(function () {
                         buttonElement.classList.remove('add-to-cart-animation');
                     }, 500);
+
+                    currentQuantity -= 1;
+                    buttonElement.setAttribute('data-quantity', currentQuantity);
+
+                    if (currentQuantity <= 0) {
+                        buttonElement.innerText = 'Out of stock';
+                        buttonElement.disabled = true;
+                        buttonElement.classList.remove('btn-primary');
+                        buttonElement.classList.add('btn-secondary');
+                    }
+
+                    // Scroll to the top of the page after adding to cart
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             } catch (err) {
                 console.log("Error adding item to cart:", err);
             }
         }
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', async function () {
             var dropdowns = document.querySelectorAll('.dropdown-submenu');
             dropdowns.forEach(function (dropdown) {
                 dropdown.addEventListener('mouseenter', function () {
@@ -120,15 +215,16 @@
                     if (submenu) submenu.classList.remove('show');
                 });
             });
+
             document.querySelectorAll('.card-img-top').forEach(function (image) {
                 let timer;
                 let brightness = 100;
 
                 image.addEventListener('mouseenter', function () {
                     timer = setInterval(() => {
-                        if (brightness < 200) {
+                        if (brightness < 130) {
                             brightness += 2;
-                            image.style.filter = brightness(${brightness}%);
+                            image.style.filter = `brightness(${brightness}%)`;
                         } else {
                             clearInterval(timer);
                         }
@@ -138,9 +234,37 @@
                 image.addEventListener('mouseleave', function () {
                     clearInterval(timer);
                     brightness = 100;
-                    image.style.filter = brightness(${brightness}%);
+                    image.style.filter = `brightness(${brightness}%)`;
                 });
             });
+
+            await updateCartButtons();
         });
+
+        async function updateCartButtons() {
+            document.querySelectorAll('.btn-primary[data-quantity]').forEach(async function (buttonElement) {
+                let bookId = parseInt(buttonElement.getAttribute('onclick').match(/add\((\d+),/)[1]);
+
+                try {
+                    var response = await fetch(`/Cart/GetBookQuantity?bookId=${bookId}`);
+                    if (response.status == 200) {
+                        var quantityInCart = await response.json();
+                        let availableQuantity = parseInt(buttonElement.getAttribute('data-quantity')) - quantityInCart;
+
+                        if (availableQuantity <= 0) {
+                            buttonElement.innerText = 'Out of stock';
+                            buttonElement.disabled = true;
+                            buttonElement.classList.remove('btn-primary');
+                            buttonElement.classList.add('btn-secondary');
+                        } else {
+                            buttonElement.setAttribute('data-quantity', availableQuantity);
+                        }
+                    }
+                } catch (err) {
+                    console.log("Error fetching book quantity in cart:", err);
+                }
+            });
+        }
     </script>
 }
+

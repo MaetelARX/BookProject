@@ -586,14 +586,3 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\bg\BookProject.resources.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\en\BookProject.resources.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.Resources.Controllers.HomeController.resources
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.Resources.Controllers.HomeController.bg.resources
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.Resources.Controllers.HomeController.en.resources
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.csproj.GenerateResource.cache
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\bg\BookProject.resources.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\en\BookProject.resources.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.Resources.Views.Index.resources
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.Resources.Views.Index.bg.resources
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.Resources.Views.Index.en.resources
