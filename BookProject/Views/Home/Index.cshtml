@@ -62,6 +62,7 @@
         transition: transform 0.3s ease-in-out;
     }
 </style>
+
 <div class="my-2">
     <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
         <div class="col-12 mx-4">
@@ -125,11 +126,6 @@
     </form>
 </div>
 
-<div class="my-2">
-    <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
-    </form>
-</div>
-
 <div class="w-100 mt-4 d-flex flex-wrap">
     @foreach (var book in Model.Books)
     {
@@ -157,6 +153,7 @@
         </div>
     }
 </div>
+
 @section Scripts {
     <script>
         async function add(bookId, buttonElement) {
@@ -194,9 +191,6 @@
                         buttonElement.classList.remove('btn-primary');
                         buttonElement.classList.add('btn-secondary');
                     }
-
-                    // Scroll to the top of the page after adding to cart
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             } catch (err) {
                 console.log("Error adding item to cart:", err);
@@ -238,33 +232,22 @@
                 });
             });
 
-            await updateCartButtons();
+            await loadCartCount();
         });
 
-        async function updateCartButtons() {
-            document.querySelectorAll('.btn-primary[data-quantity]').forEach(async function (buttonElement) {
-                let bookId = parseInt(buttonElement.getAttribute('onclick').match(/add\((\d+),/)[1]);
-
-                try {
-                    var response = await fetch(`/Cart/GetBookQuantity?bookId=${bookId}`);
-                    if (response.status == 200) {
-                        var quantityInCart = await response.json();
-                        let availableQuantity = parseInt(buttonElement.getAttribute('data-quantity')) - quantityInCart;
-
-                        if (availableQuantity <= 0) {
-                            buttonElement.innerText = 'Out of stock';
-                            buttonElement.disabled = true;
-                            buttonElement.classList.remove('btn-primary');
-                            buttonElement.classList.add('btn-secondary');
-                        } else {
-                            buttonElement.setAttribute('data-quantity', availableQuantity);
-                        }
+        async function loadCartCount() {
+            try {
+                var response = await fetch(`/Cart/GetTotalItemInCart`);
+                if (response.status == 200) {
+                    var result = await response.json();
+                    var cartCountEl = document.getElementById("cartCount");
+                    if (cartCountEl) {
+                        cartCountEl.innerHTML = result;
                     }
-                } catch (err) {
-                    console.log("Error fetching book quantity in cart:", err);
                 }
-            });
+            } catch (err) {
+                console.log("Error fetching cart count:", err);
+            }
         }
     </script>
 }
-
