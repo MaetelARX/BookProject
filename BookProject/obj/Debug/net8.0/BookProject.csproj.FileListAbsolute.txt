@@ -586,3 +586,5 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Moq.dll

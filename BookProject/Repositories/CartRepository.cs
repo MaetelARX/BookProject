@@ -9,24 +9,28 @@ namespace BookProject.Repositories
         private readonly ApplicationDbContext _db;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly bool _isTestEnvironment;
         public CartRepository(ApplicationDbContext db, UserManager<IdentityUser> userManager,
-            IHttpContextAccessor httpContextAccessor)
+            IHttpContextAccessor httpContextAccessor, bool isTestEnvironment)
         {
             _db = db;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
+            _isTestEnvironment = isTestEnvironment;
         }
 
         public async Task<int> AddItem(int bookId, int qty)
         {
             string userId = GetUserId();
-            using var transaction = _db.Database.BeginTransaction();
+            if (string.IsNullOrEmpty(userId))
+            {
+                throw new UnauthorizedAccessException("User is not logged-in");
+            }
+
+            using var transaction = !_isTestEnvironment ? _db.Database.BeginTransaction() : null;
+
             try
-            {              
-                if (string.IsNullOrEmpty(userId))
-                {
-                    throw new UnauthorizedAccessException("user is not logged-in");
-                }
+            {
                 var cart = await GetCart(userId);
                 if (cart is null)
                 {
@@ -35,16 +39,23 @@ namespace BookProject.Repositories
                         UserId = userId
                     };
                     _db.ShoppingCarts.Add(cart);
+                    await _db.SaveChangesAsync();
                 }
-                _db.SaveChanges();
-                var cartItem = _db.CartDetails.FirstOrDefault(x => x.ShoppingCartId == cart.Id && x.BookId == bookId);
-                if (cartItem is not null)
+                var cartItem = await _db.CartDetails
+                    .FirstOrDefaultAsync(x => x.ShoppingCartId == cart.Id && x.BookId == bookId);
+
+                if (cartItem != null)
                 {
                     cartItem.Quantity += qty;
                 }
                 else
                 {
-                    var book = _db.Books.Find(bookId);
+                    var book = await _db.Books.FindAsync(bookId);
+                    if (book == null)
+                    {
+                        throw new InvalidOperationException("Book does not exist");
+                    }
+
                     cartItem = new CartDetail
                     {
                         BookId = bookId,
@@ -54,11 +65,21 @@ namespace BookProject.Repositories
                     };
                     _db.CartDetails.Add(cartItem);
                 }
-                _db.SaveChanges();
-                transaction.Commit();
+
+                await _db.SaveChangesAsync();
+
+                if (!_isTestEnvironment)
+                {
+                    transaction?.Commit();
+                }
             }
-            catch (Exception ex)
+            catch
             {
+                if (!_isTestEnvironment)
+                {
+                    transaction?.Rollback();
+                }
+                throw;
             }
             var cartItemCount = await GetCartItemCount(userId);
             return cartItemCount;

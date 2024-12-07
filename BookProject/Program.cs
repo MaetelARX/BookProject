@@ -20,7 +20,13 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>(options => options.SignI
     .AddDefaultTokenProviders();
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IHomeRepository, HomeRepository>();
-builder.Services.AddTransient<ICartRepository, CartRepository>();
+builder.Services.AddTransient<ICartRepository>(provider =>
+    new CartRepository(
+        provider.GetRequiredService<ApplicationDbContext>(),
+        provider.GetRequiredService<UserManager<IdentityUser>>(),
+        provider.GetRequiredService<IHttpContextAccessor>(),
+        false
+    ));
 builder.Services.AddTransient<IUserOrderRepository, UserOrderRepository>();
 builder.Services.AddTransient<IStockRepository, StockRepository>();
 builder.Services.AddTransient<IGenreRepository, GenreRepository>();
