@@ -8,17 +8,17 @@ namespace BookProject.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "The BookName field is required.")]
         [MaxLength(50)]
         public string? BookName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "The AuthorName field is required.")]
         [MaxLength(50)]
         public string? AuthorName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "The field Price must be between.")]
         public double Price { get; set; }
         public string? Image {  get; set; }
-        [Required]
+        [Required(ErrorMessage = "The GenreId field is required.")]
         public int GenreId { get; set; }
         public Genre Genre { get; set; }
         public List<OrderDetail> OrderDetail { get; set; }
