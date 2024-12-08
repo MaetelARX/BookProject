@@ -113,6 +113,24 @@ namespace BookProject.Tests.Tests
             Assert.Equal("AddBook", redirectResult.ActionName);
         }
         [Fact]
+        public async Task AddBook_Post_ShouldHandleInvalidModel()
+        {
+            BookDTO bookDto = new BookDTO
+            {
+                BookName = "",
+                AuthorName = "",
+                Price = -5,
+                GenreId = 0
+            };
+
+            _controller.ModelState.AddModelError("BookName", "BookName is required");
+
+            var result = await _controller.AddBook(bookDto);
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+            Assert.Equal(bookDto, viewResult.Model);
+        }
+        [Fact]
         public async Task UpdateBook_Get_ShouldReturnViewWithBookDetails()
         {
             Book book = new Book
@@ -163,6 +181,25 @@ namespace BookProject.Tests.Tests
             var redirectResult = Assert.IsType<RedirectToActionResult>(result);
             Assert.Equal("Index", redirectResult.ActionName);
         }
+        [Fact]
+        public async Task UpdateBook_Post_ShouldHandleInvalidModel()
+        {
+            BookDTO bookDto = new BookDTO
+            {
+                Id = 1,
+                BookName = "",
+                AuthorName = "",
+                Price = -10,
+                GenreId = 0
+            };
+
+            _controller.ModelState.AddModelError("BookName", "BookName is required");
+
+            var result = await _controller.UpdateBook(bookDto);
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+            Assert.Equal(bookDto, viewResult.Model);
+        }
 
         [Fact]
         public async Task DeleteBook_ShouldRedirectOnSuccess()
@@ -174,6 +211,17 @@ namespace BookProject.Tests.Tests
             };
             _mockBookRepo.Setup(repo => repo.GetBookById(1)).ReturnsAsync(book);
             _mockBookRepo.Setup(repo => repo.DeleteBook(book)).Returns(Task.CompletedTask);
+
+            var result = await _controller.DeleteBook(1);
+
+            var redirectResult = Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", redirectResult.ActionName);
+        }
+
+        [Fact]
+        public async Task DeleteBook_ShouldHandleBookNotFound()
+        {
+            _mockBookRepo.Setup(repo => repo.GetBookById(1)).ReturnsAsync((Book)null);
 
             var result = await _controller.DeleteBook(1);
 
@@ -197,6 +245,22 @@ namespace BookProject.Tests.Tests
             var redirectResult = Assert.IsType<RedirectToActionResult>(result);
             Assert.Equal("Index", redirectResult.ActionName);
         }
+        [Fact]
+        public async Task AddDetails_Post_ShouldHandleInvalidModel()
+        {
+            Details details = new Details
+            {
+                Id = 1,
+                BookId = 1,
+                Description = ""
+            };
+            _controller.ModelState.AddModelError("Description", "Description is required");
+
+            var result = await _controller.AddDetails(details);
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+            Assert.Equal(details, viewResult.Model);
+        }
 
         [Fact]
         public async Task ViewDetails_ShouldReturnViewWithDetails()
@@ -213,6 +277,17 @@ namespace BookProject.Tests.Tests
 
             var viewResult = Assert.IsType<ViewResult>(result);
             Assert.Equal(details, viewResult.Model);
+        }
+
+        [Fact]
+        public async Task ViewDetails_SholdHandleDetailsNotFound()
+        {
+            _mockDetailsRepo.Setup(repo => repo.GetDetailsByBookId(1)).ReturnsAsync((Details)null);
+
+            var result = await _controller.ViewDetails(1);
+
+            var redirectResult = Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", redirectResult.ActionName);
         }
     }
 }

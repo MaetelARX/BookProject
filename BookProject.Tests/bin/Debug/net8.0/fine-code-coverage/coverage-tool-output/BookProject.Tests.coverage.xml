@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.2949" branch-rate="0.046900000000000004" version="1.9" timestamp="1733618324" lines-covered="943" lines-valid="3197" branches-covered="41" branches-valid="874">
+<coverage line-rate="0.3121" branch-rate="0.0572" version="1.9" timestamp="1733619214" lines-covered="1014" lines-valid="3248" branches-covered="50" branches-valid="874">
   <sources>
     <source>C:\Users\Konos\</source>
   </sources>
   <packages>
-    <package name="BookProject" line-rate="0.1552" branch-rate="0.046900000000000004" complexity="1196">
+    <package name="BookProject" line-rate="0.16269999999999998" branch-rate="0.0572" complexity="1196">
       <classes>
         <class name="Program/&lt;&lt;Main&gt;$&gt;d__0" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Program.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
@@ -4294,12 +4294,12 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="2" branch="False" />
+                <line number="8" hits="3" branch="False" />
               </lines>
             </method>
             <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="2" branch="False" />
+                <line number="11" hits="3" branch="False" />
               </lines>
             </method>
             <method name="get_Publisher" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -4314,7 +4314,7 @@
             </method>
             <method name="get_BookId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="2" branch="False" />
+                <line number="16" hits="3" branch="False" />
               </lines>
             </method>
             <method name="get_book" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -4324,11 +4324,11 @@
             </method>
           </methods>
           <lines>
-            <line number="8" hits="2" branch="False" />
-            <line number="11" hits="2" branch="False" />
+            <line number="8" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
             <line number="13" hits="0" branch="False" />
             <line number="14" hits="0" branch="False" />
-            <line number="16" hits="2" branch="False" />
+            <line number="16" hits="3" branch="False" />
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
@@ -4630,22 +4630,22 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="3" branch="False" />
+                <line number="8" hits="4" branch="False" />
               </lines>
             </method>
             <method name="get_BookName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="6" branch="False" />
+                <line number="11" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_AuthorName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="5" branch="False" />
+                <line number="14" hits="7" branch="False" />
               </lines>
             </method>
             <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="5" branch="False" />
+                <line number="16" hits="7" branch="False" />
               </lines>
             </method>
             <method name="get_Image" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -4655,7 +4655,7 @@
             </method>
             <method name="get_GenreId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="5" branch="False" />
+                <line number="19" hits="7" branch="False" />
               </lines>
             </method>
             <method name="get_ImageFile" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -4665,19 +4665,19 @@
             </method>
             <method name="get_GenreList" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="5" branch="False" />
+                <line number="21" hits="7" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="3" branch="False" />
-            <line number="11" hits="6" branch="False" />
-            <line number="14" hits="5" branch="False" />
-            <line number="16" hits="5" branch="False" />
+            <line number="8" hits="4" branch="False" />
+            <line number="11" hits="8" branch="False" />
+            <line number="14" hits="7" branch="False" />
+            <line number="16" hits="7" branch="False" />
             <line number="17" hits="3" branch="False" />
-            <line number="19" hits="5" branch="False" />
+            <line number="19" hits="7" branch="False" />
             <line number="20" hits="2" branch="False" />
-            <line number="21" hits="5" branch="False" />
+            <line number="21" hits="7" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Models.DTOS.CheckOutModel" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Models\DTOS\CheckOutModel.cs" line-rate="0" branch-rate="1" complexity="5">
@@ -5472,28 +5472,28 @@
           <methods>
             <method name=".ctor" signature="(BookProject.Repositories.Interfaces.IBookRepository,BookProject.Repositories.Interfaces.IGenreRepository,BookProject.Utilities.Interfaces.IFileService,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,BookProject.Repositories.Interfaces.IDetailsRepository)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="8" branch="False" />
-                <line number="18" hits="8" branch="False" />
-                <line number="19" hits="8" branch="False" />
-                <line number="20" hits="8" branch="False" />
-                <line number="21" hits="8" branch="False" />
-                <line number="22" hits="8" branch="False" />
-                <line number="23" hits="8" branch="False" />
-                <line number="24" hits="8" branch="False" />
-                <line number="25" hits="8" branch="False" />
+                <line number="17" hits="13" branch="False" />
+                <line number="18" hits="13" branch="False" />
+                <line number="19" hits="13" branch="False" />
+                <line number="20" hits="13" branch="False" />
+                <line number="21" hits="13" branch="False" />
+                <line number="22" hits="13" branch="False" />
+                <line number="23" hits="13" branch="False" />
+                <line number="24" hits="13" branch="False" />
+                <line number="25" hits="13" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="8" branch="False" />
-            <line number="18" hits="8" branch="False" />
-            <line number="19" hits="8" branch="False" />
-            <line number="20" hits="8" branch="False" />
-            <line number="21" hits="8" branch="False" />
-            <line number="22" hits="8" branch="False" />
-            <line number="23" hits="8" branch="False" />
-            <line number="24" hits="8" branch="False" />
-            <line number="25" hits="8" branch="False" />
+            <line number="17" hits="13" branch="False" />
+            <line number="18" hits="13" branch="False" />
+            <line number="19" hits="13" branch="False" />
+            <line number="20" hits="13" branch="False" />
+            <line number="21" hits="13" branch="False" />
+            <line number="22" hits="13" branch="False" />
+            <line number="23" hits="13" branch="False" />
+            <line number="24" hits="13" branch="False" />
+            <line number="25" hits="13" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.BookController/&lt;&gt;c" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -5510,11 +5510,11 @@
             </method>
             <method name="&lt;AddBook&gt;b__8_0" signature="(BookProject.Models.Genre)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="54" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="57" hits="1" branch="False" />
-                <line number="58" hits="1" branch="False" />
+                <line number="54" hits="2" branch="False" />
+                <line number="55" hits="2" branch="False" />
+                <line number="56" hits="2" branch="False" />
+                <line number="57" hits="2" branch="False" />
+                <line number="58" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
@@ -5525,33 +5525,33 @@
             <line number="40" hits="1" branch="False" />
             <line number="41" hits="1" branch="False" />
             <line number="42" hits="1" branch="False" />
-            <line number="54" hits="1" branch="False" />
-            <line number="55" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="57" hits="1" branch="False" />
-            <line number="58" hits="1" branch="False" />
+            <line number="54" hits="2" branch="False" />
+            <line number="55" hits="2" branch="False" />
+            <line number="56" hits="2" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="58" hits="2" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.BookController/&lt;&gt;c__DisplayClass10_0" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;UpdateBook&gt;b__0" signature="(BookProject.Models.Genre)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="147" hits="1" branch="False" />
-                <line number="148" hits="1" branch="False" />
-                <line number="149" hits="1" branch="False" />
-                <line number="150" hits="1" branch="False" />
-                <line number="151" hits="1" branch="False" />
-                <line number="152" hits="1" branch="False" />
+                <line number="147" hits="2" branch="False" />
+                <line number="148" hits="2" branch="False" />
+                <line number="149" hits="2" branch="False" />
+                <line number="150" hits="2" branch="False" />
+                <line number="151" hits="2" branch="False" />
+                <line number="152" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="147" hits="1" branch="False" />
-            <line number="148" hits="1" branch="False" />
-            <line number="149" hits="1" branch="False" />
-            <line number="150" hits="1" branch="False" />
-            <line number="151" hits="1" branch="False" />
-            <line number="152" hits="1" branch="False" />
+            <line number="147" hits="2" branch="False" />
+            <line number="148" hits="2" branch="False" />
+            <line number="149" hits="2" branch="False" />
+            <line number="150" hits="2" branch="False" />
+            <line number="151" hits="2" branch="False" />
+            <line number="152" hits="2" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.BookController/&lt;&gt;c__DisplayClass9_0" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -5600,24 +5600,24 @@
             <line number="48" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Controllers.BookController/&lt;AddBook&gt;d__8" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.44179999999999997" branch-rate="0.5" complexity="8">
+        <class name="BookProject.Controllers.BookController/&lt;AddBook&gt;d__8" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.48829999999999996" branch-rate="0.625" complexity="8">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.44179999999999997" branch-rate="0.5" complexity="8">
+            <method name="MoveNext" signature="()" line-rate="0.48829999999999996" branch-rate="0.625" complexity="8">
               <lines>
-                <line number="52" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="52" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="16" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="53" hits="1" branch="False" />
-                <line number="59" hits="1" branch="False" />
-                <line number="61" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="53" hits="2" branch="False" />
+                <line number="59" hits="2" branch="False" />
+                <line number="61" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="235" type="jump" coverage="50%" />
+                    <condition number="235" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="62" hits="0" branch="False" />
-                <line number="63" hits="0" branch="False" />
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
                 <line number="67" hits="1" branch="False" />
                 <line number="68" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
@@ -5662,25 +5662,25 @@
                 <line number="107" hits="0" branch="False" />
                 <line number="108" hits="0" branch="False" />
                 <line number="109" hits="0" branch="False" />
-                <line number="111" hits="1" branch="False" />
+                <line number="111" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="52" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="52" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="16" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="53" hits="1" branch="False" />
-            <line number="59" hits="1" branch="False" />
-            <line number="61" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="53" hits="2" branch="False" />
+            <line number="59" hits="2" branch="False" />
+            <line number="61" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="235" type="jump" coverage="50%" />
+                <condition number="235" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="62" hits="0" branch="False" />
-            <line number="63" hits="0" branch="False" />
+            <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
             <line number="67" hits="1" branch="False" />
             <line number="68" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
@@ -5725,7 +5725,7 @@
             <line number="107" hits="0" branch="False" />
             <line number="108" hits="0" branch="False" />
             <line number="109" hits="0" branch="False" />
-            <line number="111" hits="1" branch="False" />
+            <line number="111" hits="2" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.BookController/&lt;AddDetails&gt;d__12" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0" branch-rate="0" complexity="2">
@@ -5770,34 +5770,34 @@
             <line number="278" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Controllers.BookController/&lt;AddDetails&gt;d__13" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.3333" branch-rate="0.1666" complexity="6">
+        <class name="BookProject.Controllers.BookController/&lt;AddDetails&gt;d__13" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.8095" branch-rate="1" complexity="6">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.3333" branch-rate="0.1666" complexity="6">
+            <method name="MoveNext" signature="()" line-rate="0.8095" branch-rate="1" complexity="6">
               <lines>
-                <line number="283" hits="1" branch="False" />
-                <line number="284" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="283" hits="2" branch="False" />
+                <line number="284" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="39" type="jump" coverage="50%" />
+                    <condition number="39" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="285" hits="0" branch="False" />
-                <line number="286" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="285" hits="1" branch="False" />
+                <line number="286" hits="5" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="248" type="jump" coverage="0%" />
+                    <condition number="248" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="287" hits="0" branch="False" />
-                <line number="288" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="287" hits="1" branch="False" />
+                <line number="288" hits="5" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="193" type="jump" coverage="0%" />
+                    <condition number="193" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="289" hits="0" branch="False" />
-                <line number="290" hits="0" branch="False" />
-                <line number="291" hits="0" branch="False" />
-                <line number="292" hits="0" branch="False" />
-                <line number="293" hits="0" branch="False" />
-                <line number="294" hits="0" branch="False" />
+                <line number="289" hits="1" branch="False" />
+                <line number="290" hits="1" branch="False" />
+                <line number="291" hits="1" branch="False" />
+                <line number="292" hits="1" branch="False" />
+                <line number="293" hits="1" branch="False" />
+                <line number="294" hits="1" branch="False" />
                 <line number="297" hits="1" branch="False" />
                 <line number="298" hits="1" branch="False" />
                 <line number="299" hits="1" branch="False" />
@@ -5806,35 +5806,35 @@
                 <line number="303" hits="0" branch="False" />
                 <line number="304" hits="0" branch="False" />
                 <line number="305" hits="0" branch="False" />
-                <line number="307" hits="1" branch="False" />
+                <line number="307" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="283" hits="1" branch="False" />
-            <line number="284" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="283" hits="2" branch="False" />
+            <line number="284" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="39" type="jump" coverage="50%" />
+                <condition number="39" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="285" hits="0" branch="False" />
-            <line number="286" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="285" hits="1" branch="False" />
+            <line number="286" hits="5" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="248" type="jump" coverage="0%" />
+                <condition number="248" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="287" hits="0" branch="False" />
-            <line number="288" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="287" hits="1" branch="False" />
+            <line number="288" hits="5" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="193" type="jump" coverage="0%" />
+                <condition number="193" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="289" hits="0" branch="False" />
-            <line number="290" hits="0" branch="False" />
-            <line number="291" hits="0" branch="False" />
-            <line number="292" hits="0" branch="False" />
-            <line number="293" hits="0" branch="False" />
-            <line number="294" hits="0" branch="False" />
+            <line number="289" hits="1" branch="False" />
+            <line number="290" hits="1" branch="False" />
+            <line number="291" hits="1" branch="False" />
+            <line number="292" hits="1" branch="False" />
+            <line number="293" hits="1" branch="False" />
+            <line number="294" hits="1" branch="False" />
             <line number="297" hits="1" branch="False" />
             <line number="298" hits="1" branch="False" />
             <line number="299" hits="1" branch="False" />
@@ -5843,24 +5843,24 @@
             <line number="303" hits="0" branch="False" />
             <line number="304" hits="0" branch="False" />
             <line number="305" hits="0" branch="False" />
-            <line number="307" hits="1" branch="False" />
+            <line number="307" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Controllers.BookController/&lt;DeleteBook&gt;d__11" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.37929999999999997" branch-rate="0.5" complexity="4">
+        <class name="BookProject.Controllers.BookController/&lt;DeleteBook&gt;d__11" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.4827" branch-rate="0.75" complexity="4">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.37929999999999997" branch-rate="0.5" complexity="4">
+            <method name="MoveNext" signature="()" line-rate="0.4827" branch-rate="0.75" complexity="4">
               <lines>
-                <line number="231" hits="1" branch="False" />
-                <line number="233" hits="1" branch="False" />
-                <line number="234" hits="1" branch="False" />
-                <line number="235" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="231" hits="2" branch="False" />
+                <line number="233" hits="2" branch="False" />
+                <line number="234" hits="2" branch="False" />
+                <line number="235" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="185" type="jump" coverage="50%" />
+                    <condition number="185" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="236" hits="0" branch="False" />
-                <line number="237" hits="0" branch="False" />
-                <line number="238" hits="0" branch="False" />
+                <line number="236" hits="1" branch="False" />
+                <line number="237" hits="1" branch="False" />
+                <line number="238" hits="1" branch="False" />
                 <line number="240" hits="1" branch="False" />
                 <line number="241" hits="1" branch="False" />
                 <line number="242" hits="1" branch="True" condition-coverage="50% (1/2)">
@@ -5872,7 +5872,7 @@
                 <line number="244" hits="0" branch="False" />
                 <line number="245" hits="0" branch="False" />
                 <line number="246" hits="1" branch="False" />
-                <line number="247" hits="1" branch="False" />
+                <line number="247" hits="2" branch="False" />
                 <line number="248" hits="0" branch="False" />
                 <line number="249" hits="0" branch="False" />
                 <line number="250" hits="0" branch="False" />
@@ -5885,23 +5885,23 @@
                 <line number="257" hits="0" branch="False" />
                 <line number="258" hits="0" branch="False" />
                 <line number="259" hits="0" branch="False" />
-                <line number="260" hits="1" branch="False" />
-                <line number="261" hits="1" branch="False" />
+                <line number="260" hits="2" branch="False" />
+                <line number="261" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="231" hits="1" branch="False" />
-            <line number="233" hits="1" branch="False" />
-            <line number="234" hits="1" branch="False" />
-            <line number="235" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="231" hits="2" branch="False" />
+            <line number="233" hits="2" branch="False" />
+            <line number="234" hits="2" branch="False" />
+            <line number="235" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="185" type="jump" coverage="50%" />
+                <condition number="185" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="236" hits="0" branch="False" />
-            <line number="237" hits="0" branch="False" />
-            <line number="238" hits="0" branch="False" />
+            <line number="236" hits="1" branch="False" />
+            <line number="237" hits="1" branch="False" />
+            <line number="238" hits="1" branch="False" />
             <line number="240" hits="1" branch="False" />
             <line number="241" hits="1" branch="False" />
             <line number="242" hits="1" branch="True" condition-coverage="50% (1/2)">
@@ -5913,7 +5913,7 @@
             <line number="244" hits="0" branch="False" />
             <line number="245" hits="0" branch="False" />
             <line number="246" hits="1" branch="False" />
-            <line number="247" hits="1" branch="False" />
+            <line number="247" hits="2" branch="False" />
             <line number="248" hits="0" branch="False" />
             <line number="249" hits="0" branch="False" />
             <line number="250" hits="0" branch="False" />
@@ -5926,8 +5926,8 @@
             <line number="257" hits="0" branch="False" />
             <line number="258" hits="0" branch="False" />
             <line number="259" hits="0" branch="False" />
-            <line number="260" hits="1" branch="False" />
-            <line number="261" hits="1" branch="False" />
+            <line number="260" hits="2" branch="False" />
+            <line number="261" hits="2" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.BookController/&lt;Index&gt;d__6" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -5948,24 +5948,24 @@
             <line number="31" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Controllers.BookController/&lt;UpdateBook&gt;d__10" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.35" branch-rate="0.41659999999999997" complexity="12">
+        <class name="BookProject.Controllers.BookController/&lt;UpdateBook&gt;d__10" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.3833" branch-rate="0.5" complexity="12">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.35" branch-rate="0.41659999999999997" complexity="12">
+            <method name="MoveNext" signature="()" line-rate="0.3833" branch-rate="0.5" complexity="12">
               <lines>
-                <line number="145" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="145" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="16" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="146" hits="1" branch="False" />
-                <line number="153" hits="1" branch="False" />
-                <line number="155" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="146" hits="2" branch="False" />
+                <line number="153" hits="2" branch="False" />
+                <line number="155" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="254" type="jump" coverage="50%" />
+                    <condition number="254" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="156" hits="0" branch="False" />
-                <line number="157" hits="0" branch="False" />
+                <line number="156" hits="1" branch="False" />
+                <line number="157" hits="1" branch="False" />
                 <line number="161" hits="1" branch="False" />
                 <line number="162" hits="1" branch="False" />
                 <line number="163" hits="1" branch="True" condition-coverage="50% (1/2)">
@@ -6035,25 +6035,25 @@
                 <line number="223" hits="0" branch="False" />
                 <line number="224" hits="0" branch="False" />
                 <line number="225" hits="0" branch="False" />
-                <line number="227" hits="1" branch="False" />
+                <line number="227" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="145" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="145" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="16" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="146" hits="1" branch="False" />
-            <line number="153" hits="1" branch="False" />
-            <line number="155" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="146" hits="2" branch="False" />
+            <line number="153" hits="2" branch="False" />
+            <line number="155" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="254" type="jump" coverage="50%" />
+                <condition number="254" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="156" hits="0" branch="False" />
-            <line number="157" hits="0" branch="False" />
+            <line number="156" hits="1" branch="False" />
+            <line number="157" hits="1" branch="False" />
             <line number="161" hits="1" branch="False" />
             <line number="162" hits="1" branch="False" />
             <line number="163" hits="1" branch="True" condition-coverage="50% (1/2)">
@@ -6123,7 +6123,7 @@
             <line number="223" hits="0" branch="False" />
             <line number="224" hits="0" branch="False" />
             <line number="225" hits="0" branch="False" />
-            <line number="227" hits="1" branch="False" />
+            <line number="227" hits="2" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.BookController/&lt;UpdateBook&gt;d__9" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.8332999999999999" branch-rate="0.5" complexity="2">
@@ -6180,38 +6180,38 @@
             <line number="141" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Controllers.BookController/&lt;ViewDetails&gt;d__14" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="0.625" branch-rate="0.5" complexity="2">
+        <class name="BookProject.Controllers.BookController/&lt;ViewDetails&gt;d__14" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\BookController.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="309" hits="1" branch="False" />
-                <line number="310" hits="1" branch="False" />
-                <line number="311" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="309" hits="2" branch="False" />
+                <line number="310" hits="2" branch="False" />
+                <line number="311" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="164" type="jump" coverage="50%" />
+                    <condition number="164" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="312" hits="0" branch="False" />
-                <line number="313" hits="0" branch="False" />
-                <line number="314" hits="0" branch="False" />
+                <line number="312" hits="1" branch="False" />
+                <line number="313" hits="1" branch="False" />
+                <line number="314" hits="1" branch="False" />
                 <line number="316" hits="1" branch="False" />
-                <line number="317" hits="1" branch="False" />
+                <line number="317" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="309" hits="1" branch="False" />
-            <line number="310" hits="1" branch="False" />
-            <line number="311" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="309" hits="2" branch="False" />
+            <line number="310" hits="2" branch="False" />
+            <line number="311" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="164" type="jump" coverage="50%" />
+                <condition number="164" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="312" hits="0" branch="False" />
-            <line number="313" hits="0" branch="False" />
-            <line number="314" hits="0" branch="False" />
+            <line number="312" hits="1" branch="False" />
+            <line number="313" hits="1" branch="False" />
+            <line number="314" hits="1" branch="False" />
             <line number="316" hits="1" branch="False" />
-            <line number="317" hits="1" branch="False" />
+            <line number="317" hits="2" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Controllers.CartController" filename="OneDrive\Documents\GitHub\BookProject\BookProject\Controllers\CartController.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -11720,7 +11720,7 @@
         </class>
       </classes>
     </package>
-    <package name="BookProject.Tests" line-rate="0.9981" branch-rate="1" complexity="37">
+    <package name="BookProject.Tests" line-rate="0.9982" branch-rate="1" complexity="42">
       <classes>
         <class name="AutoGeneratedProgram" filename=".nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -11738,50 +11738,50 @@
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="28" hits="8" branch="False" />
-                <line number="29" hits="8" branch="False" />
-                <line number="30" hits="8" branch="False" />
-                <line number="31" hits="8" branch="False" />
-                <line number="32" hits="8" branch="False" />
-                <line number="33" hits="8" branch="False" />
-                <line number="34" hits="8" branch="False" />
-                <line number="36" hits="8" branch="False" />
-                <line number="37" hits="8" branch="False" />
-                <line number="38" hits="8" branch="False" />
-                <line number="39" hits="8" branch="False" />
-                <line number="40" hits="8" branch="False" />
-                <line number="41" hits="8" branch="False" />
-                <line number="42" hits="8" branch="False" />
-                <line number="43" hits="8" branch="False" />
-                <line number="44" hits="8" branch="False" />
-                <line number="45" hits="8" branch="False" />
-                <line number="46" hits="8" branch="False" />
-                <line number="47" hits="8" branch="False" />
-                <line number="48" hits="8" branch="False" />
+                <line number="28" hits="13" branch="False" />
+                <line number="29" hits="13" branch="False" />
+                <line number="30" hits="13" branch="False" />
+                <line number="31" hits="13" branch="False" />
+                <line number="32" hits="13" branch="False" />
+                <line number="33" hits="13" branch="False" />
+                <line number="34" hits="13" branch="False" />
+                <line number="36" hits="13" branch="False" />
+                <line number="37" hits="13" branch="False" />
+                <line number="38" hits="13" branch="False" />
+                <line number="39" hits="13" branch="False" />
+                <line number="40" hits="13" branch="False" />
+                <line number="41" hits="13" branch="False" />
+                <line number="42" hits="13" branch="False" />
+                <line number="43" hits="13" branch="False" />
+                <line number="44" hits="13" branch="False" />
+                <line number="45" hits="13" branch="False" />
+                <line number="46" hits="13" branch="False" />
+                <line number="47" hits="13" branch="False" />
+                <line number="48" hits="13" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="28" hits="8" branch="False" />
-            <line number="29" hits="8" branch="False" />
-            <line number="30" hits="8" branch="False" />
-            <line number="31" hits="8" branch="False" />
-            <line number="32" hits="8" branch="False" />
-            <line number="33" hits="8" branch="False" />
-            <line number="34" hits="8" branch="False" />
-            <line number="36" hits="8" branch="False" />
-            <line number="37" hits="8" branch="False" />
-            <line number="38" hits="8" branch="False" />
-            <line number="39" hits="8" branch="False" />
-            <line number="40" hits="8" branch="False" />
-            <line number="41" hits="8" branch="False" />
-            <line number="42" hits="8" branch="False" />
-            <line number="43" hits="8" branch="False" />
-            <line number="44" hits="8" branch="False" />
-            <line number="45" hits="8" branch="False" />
-            <line number="46" hits="8" branch="False" />
-            <line number="47" hits="8" branch="False" />
-            <line number="48" hits="8" branch="False" />
+            <line number="28" hits="13" branch="False" />
+            <line number="29" hits="13" branch="False" />
+            <line number="30" hits="13" branch="False" />
+            <line number="31" hits="13" branch="False" />
+            <line number="32" hits="13" branch="False" />
+            <line number="33" hits="13" branch="False" />
+            <line number="34" hits="13" branch="False" />
+            <line number="36" hits="13" branch="False" />
+            <line number="37" hits="13" branch="False" />
+            <line number="38" hits="13" branch="False" />
+            <line number="39" hits="13" branch="False" />
+            <line number="40" hits="13" branch="False" />
+            <line number="41" hits="13" branch="False" />
+            <line number="42" hits="13" branch="False" />
+            <line number="43" hits="13" branch="False" />
+            <line number="44" hits="13" branch="False" />
+            <line number="45" hits="13" branch="False" />
+            <line number="46" hits="13" branch="False" />
+            <line number="47" hits="13" branch="False" />
+            <line number="48" hits="13" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Tests.Tests.BookControllerTests/&lt;AddBook_Get_ShouldReturnViewWithGenres&gt;d__8" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -11834,6 +11834,42 @@
             <line number="96" hits="1" branch="False" />
           </lines>
         </class>
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;AddBook_Post_ShouldHandleInvalidModel&gt;d__10" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="117" hits="1" branch="False" />
+                <line number="118" hits="1" branch="False" />
+                <line number="119" hits="1" branch="False" />
+                <line number="120" hits="1" branch="False" />
+                <line number="121" hits="1" branch="False" />
+                <line number="122" hits="1" branch="False" />
+                <line number="123" hits="1" branch="False" />
+                <line number="124" hits="1" branch="False" />
+                <line number="126" hits="1" branch="False" />
+                <line number="128" hits="1" branch="False" />
+                <line number="130" hits="1" branch="False" />
+                <line number="131" hits="1" branch="False" />
+                <line number="132" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="117" hits="1" branch="False" />
+            <line number="118" hits="1" branch="False" />
+            <line number="119" hits="1" branch="False" />
+            <line number="120" hits="1" branch="False" />
+            <line number="121" hits="1" branch="False" />
+            <line number="122" hits="1" branch="False" />
+            <line number="123" hits="1" branch="False" />
+            <line number="124" hits="1" branch="False" />
+            <line number="126" hits="1" branch="False" />
+            <line number="128" hits="1" branch="False" />
+            <line number="130" hits="1" branch="False" />
+            <line number="131" hits="1" branch="False" />
+            <line number="132" hits="1" branch="False" />
+          </lines>
+        </class>
         <class name="BookProject.Tests.Tests.BookControllerTests/&lt;AddBook_Post_ShouldRedirectOnSuccess&gt;d__9" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -11870,72 +11906,128 @@
             <line number="114" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;AddDetails_Post_ShouldRedirectOnSuccess&gt;d__13" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;AddDetails_Post_ShouldHandleInvalidModel&gt;d__17" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="186" hits="1" branch="False" />
-                <line number="187" hits="1" branch="False" />
-                <line number="188" hits="1" branch="False" />
-                <line number="189" hits="1" branch="False" />
-                <line number="190" hits="1" branch="False" />
-                <line number="191" hits="1" branch="False" />
-                <line number="192" hits="1" branch="False" />
-                <line number="193" hits="1" branch="False" />
-                <line number="195" hits="1" branch="False" />
-                <line number="197" hits="1" branch="False" />
-                <line number="198" hits="1" branch="False" />
-                <line number="199" hits="1" branch="False" />
+                <line number="250" hits="1" branch="False" />
+                <line number="251" hits="1" branch="False" />
+                <line number="252" hits="1" branch="False" />
+                <line number="253" hits="1" branch="False" />
+                <line number="254" hits="1" branch="False" />
+                <line number="255" hits="1" branch="False" />
+                <line number="256" hits="1" branch="False" />
+                <line number="257" hits="1" branch="False" />
+                <line number="259" hits="1" branch="False" />
+                <line number="261" hits="1" branch="False" />
+                <line number="262" hits="1" branch="False" />
+                <line number="263" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="186" hits="1" branch="False" />
-            <line number="187" hits="1" branch="False" />
-            <line number="188" hits="1" branch="False" />
-            <line number="189" hits="1" branch="False" />
-            <line number="190" hits="1" branch="False" />
-            <line number="191" hits="1" branch="False" />
-            <line number="192" hits="1" branch="False" />
-            <line number="193" hits="1" branch="False" />
-            <line number="195" hits="1" branch="False" />
-            <line number="197" hits="1" branch="False" />
-            <line number="198" hits="1" branch="False" />
-            <line number="199" hits="1" branch="False" />
+            <line number="250" hits="1" branch="False" />
+            <line number="251" hits="1" branch="False" />
+            <line number="252" hits="1" branch="False" />
+            <line number="253" hits="1" branch="False" />
+            <line number="254" hits="1" branch="False" />
+            <line number="255" hits="1" branch="False" />
+            <line number="256" hits="1" branch="False" />
+            <line number="257" hits="1" branch="False" />
+            <line number="259" hits="1" branch="False" />
+            <line number="261" hits="1" branch="False" />
+            <line number="262" hits="1" branch="False" />
+            <line number="263" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;DeleteBook_ShouldRedirectOnSuccess&gt;d__12" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;AddDetails_Post_ShouldRedirectOnSuccess&gt;d__16" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="169" hits="1" branch="False" />
-                <line number="170" hits="1" branch="False" />
-                <line number="171" hits="1" branch="False" />
-                <line number="172" hits="1" branch="False" />
-                <line number="173" hits="1" branch="False" />
-                <line number="174" hits="1" branch="False" />
-                <line number="175" hits="1" branch="False" />
-                <line number="176" hits="1" branch="False" />
-                <line number="178" hits="1" branch="False" />
-                <line number="180" hits="1" branch="False" />
-                <line number="181" hits="1" branch="False" />
-                <line number="182" hits="1" branch="False" />
+                <line number="234" hits="1" branch="False" />
+                <line number="235" hits="1" branch="False" />
+                <line number="236" hits="1" branch="False" />
+                <line number="237" hits="1" branch="False" />
+                <line number="238" hits="1" branch="False" />
+                <line number="239" hits="1" branch="False" />
+                <line number="240" hits="1" branch="False" />
+                <line number="241" hits="1" branch="False" />
+                <line number="243" hits="1" branch="False" />
+                <line number="245" hits="1" branch="False" />
+                <line number="246" hits="1" branch="False" />
+                <line number="247" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="169" hits="1" branch="False" />
-            <line number="170" hits="1" branch="False" />
-            <line number="171" hits="1" branch="False" />
-            <line number="172" hits="1" branch="False" />
-            <line number="173" hits="1" branch="False" />
-            <line number="174" hits="1" branch="False" />
-            <line number="175" hits="1" branch="False" />
-            <line number="176" hits="1" branch="False" />
-            <line number="178" hits="1" branch="False" />
-            <line number="180" hits="1" branch="False" />
-            <line number="181" hits="1" branch="False" />
-            <line number="182" hits="1" branch="False" />
+            <line number="234" hits="1" branch="False" />
+            <line number="235" hits="1" branch="False" />
+            <line number="236" hits="1" branch="False" />
+            <line number="237" hits="1" branch="False" />
+            <line number="238" hits="1" branch="False" />
+            <line number="239" hits="1" branch="False" />
+            <line number="240" hits="1" branch="False" />
+            <line number="241" hits="1" branch="False" />
+            <line number="243" hits="1" branch="False" />
+            <line number="245" hits="1" branch="False" />
+            <line number="246" hits="1" branch="False" />
+            <line number="247" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;DeleteBook_ShouldHandleBookNotFound&gt;d__15" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="223" hits="1" branch="False" />
+                <line number="224" hits="1" branch="False" />
+                <line number="226" hits="1" branch="False" />
+                <line number="228" hits="1" branch="False" />
+                <line number="229" hits="1" branch="False" />
+                <line number="230" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="223" hits="1" branch="False" />
+            <line number="224" hits="1" branch="False" />
+            <line number="226" hits="1" branch="False" />
+            <line number="228" hits="1" branch="False" />
+            <line number="229" hits="1" branch="False" />
+            <line number="230" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;DeleteBook_ShouldRedirectOnSuccess&gt;d__14" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="206" hits="1" branch="False" />
+                <line number="207" hits="1" branch="False" />
+                <line number="208" hits="1" branch="False" />
+                <line number="209" hits="1" branch="False" />
+                <line number="210" hits="1" branch="False" />
+                <line number="211" hits="1" branch="False" />
+                <line number="212" hits="1" branch="False" />
+                <line number="213" hits="1" branch="False" />
+                <line number="215" hits="1" branch="False" />
+                <line number="217" hits="1" branch="False" />
+                <line number="218" hits="1" branch="False" />
+                <line number="219" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="206" hits="1" branch="False" />
+            <line number="207" hits="1" branch="False" />
+            <line number="208" hits="1" branch="False" />
+            <line number="209" hits="1" branch="False" />
+            <line number="210" hits="1" branch="False" />
+            <line number="211" hits="1" branch="False" />
+            <line number="212" hits="1" branch="False" />
+            <line number="213" hits="1" branch="False" />
+            <line number="215" hits="1" branch="False" />
+            <line number="217" hits="1" branch="False" />
+            <line number="218" hits="1" branch="False" />
+            <line number="219" hits="1" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Tests.Tests.BookControllerTests/&lt;Index_ShouldReturnViewWithBooks&gt;d__7" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -11986,74 +12078,24 @@
             <line number="71" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;UpdateBook_Get_ShouldReturnViewWithBookDetails&gt;d__10" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;UpdateBook_Get_ShouldReturnViewWithBookDetails&gt;d__11" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="117" hits="1" branch="False" />
-                <line number="118" hits="1" branch="False" />
-                <line number="119" hits="1" branch="False" />
-                <line number="120" hits="1" branch="False" />
-                <line number="121" hits="1" branch="False" />
-                <line number="122" hits="1" branch="False" />
-                <line number="123" hits="1" branch="False" />
-                <line number="124" hits="1" branch="False" />
-                <line number="126" hits="1" branch="False" />
-                <line number="127" hits="1" branch="False" />
-                <line number="128" hits="1" branch="False" />
-                <line number="129" hits="1" branch="False" />
-                <line number="130" hits="1" branch="False" />
-                <line number="131" hits="1" branch="False" />
-                <line number="132" hits="1" branch="False" />
-                <line number="133" hits="1" branch="False" />
-                <line number="134" hits="1" branch="False" />
                 <line number="135" hits="1" branch="False" />
                 <line number="136" hits="1" branch="False" />
                 <line number="137" hits="1" branch="False" />
                 <line number="138" hits="1" branch="False" />
                 <line number="139" hits="1" branch="False" />
+                <line number="140" hits="1" branch="False" />
                 <line number="141" hits="1" branch="False" />
-                <line number="143" hits="1" branch="False" />
+                <line number="142" hits="1" branch="False" />
                 <line number="144" hits="1" branch="False" />
                 <line number="145" hits="1" branch="False" />
                 <line number="146" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="117" hits="1" branch="False" />
-            <line number="118" hits="1" branch="False" />
-            <line number="119" hits="1" branch="False" />
-            <line number="120" hits="1" branch="False" />
-            <line number="121" hits="1" branch="False" />
-            <line number="122" hits="1" branch="False" />
-            <line number="123" hits="1" branch="False" />
-            <line number="124" hits="1" branch="False" />
-            <line number="126" hits="1" branch="False" />
-            <line number="127" hits="1" branch="False" />
-            <line number="128" hits="1" branch="False" />
-            <line number="129" hits="1" branch="False" />
-            <line number="130" hits="1" branch="False" />
-            <line number="131" hits="1" branch="False" />
-            <line number="132" hits="1" branch="False" />
-            <line number="133" hits="1" branch="False" />
-            <line number="134" hits="1" branch="False" />
-            <line number="135" hits="1" branch="False" />
-            <line number="136" hits="1" branch="False" />
-            <line number="137" hits="1" branch="False" />
-            <line number="138" hits="1" branch="False" />
-            <line number="139" hits="1" branch="False" />
-            <line number="141" hits="1" branch="False" />
-            <line number="143" hits="1" branch="False" />
-            <line number="144" hits="1" branch="False" />
-            <line number="145" hits="1" branch="False" />
-            <line number="146" hits="1" branch="False" />
-          </lines>
-        </class>
-        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;UpdateBook_Post_ShouldRedirectOnSuccess&gt;d__11" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
+                <line number="147" hits="1" branch="False" />
+                <line number="148" hits="1" branch="False" />
+                <line number="149" hits="1" branch="False" />
                 <line number="150" hits="1" branch="False" />
                 <line number="151" hits="1" branch="False" />
                 <line number="152" hits="1" branch="False" />
@@ -12062,16 +12104,29 @@
                 <line number="155" hits="1" branch="False" />
                 <line number="156" hits="1" branch="False" />
                 <line number="157" hits="1" branch="False" />
-                <line number="158" hits="1" branch="False" />
                 <line number="159" hits="1" branch="False" />
                 <line number="161" hits="1" branch="False" />
+                <line number="162" hits="1" branch="False" />
                 <line number="163" hits="1" branch="False" />
                 <line number="164" hits="1" branch="False" />
-                <line number="165" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="135" hits="1" branch="False" />
+            <line number="136" hits="1" branch="False" />
+            <line number="137" hits="1" branch="False" />
+            <line number="138" hits="1" branch="False" />
+            <line number="139" hits="1" branch="False" />
+            <line number="140" hits="1" branch="False" />
+            <line number="141" hits="1" branch="False" />
+            <line number="142" hits="1" branch="False" />
+            <line number="144" hits="1" branch="False" />
+            <line number="145" hits="1" branch="False" />
+            <line number="146" hits="1" branch="False" />
+            <line number="147" hits="1" branch="False" />
+            <line number="148" hits="1" branch="False" />
+            <line number="149" hits="1" branch="False" />
             <line number="150" hits="1" branch="False" />
             <line number="151" hits="1" branch="False" />
             <line number="152" hits="1" branch="False" />
@@ -12080,46 +12135,143 @@
             <line number="155" hits="1" branch="False" />
             <line number="156" hits="1" branch="False" />
             <line number="157" hits="1" branch="False" />
-            <line number="158" hits="1" branch="False" />
             <line number="159" hits="1" branch="False" />
             <line number="161" hits="1" branch="False" />
+            <line number="162" hits="1" branch="False" />
             <line number="163" hits="1" branch="False" />
             <line number="164" hits="1" branch="False" />
-            <line number="165" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;ViewDetails_ShouldReturnViewWithDetails&gt;d__14" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;UpdateBook_Post_ShouldHandleInvalidModel&gt;d__13" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="203" hits="1" branch="False" />
-                <line number="204" hits="1" branch="False" />
-                <line number="205" hits="1" branch="False" />
-                <line number="206" hits="1" branch="False" />
-                <line number="207" hits="1" branch="False" />
-                <line number="208" hits="1" branch="False" />
-                <line number="209" hits="1" branch="False" />
-                <line number="210" hits="1" branch="False" />
-                <line number="212" hits="1" branch="False" />
-                <line number="214" hits="1" branch="False" />
-                <line number="215" hits="1" branch="False" />
-                <line number="216" hits="1" branch="False" />
+                <line number="186" hits="1" branch="False" />
+                <line number="187" hits="1" branch="False" />
+                <line number="188" hits="1" branch="False" />
+                <line number="189" hits="1" branch="False" />
+                <line number="190" hits="1" branch="False" />
+                <line number="191" hits="1" branch="False" />
+                <line number="192" hits="1" branch="False" />
+                <line number="193" hits="1" branch="False" />
+                <line number="194" hits="1" branch="False" />
+                <line number="196" hits="1" branch="False" />
+                <line number="198" hits="1" branch="False" />
+                <line number="200" hits="1" branch="False" />
+                <line number="201" hits="1" branch="False" />
+                <line number="202" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="203" hits="1" branch="False" />
-            <line number="204" hits="1" branch="False" />
-            <line number="205" hits="1" branch="False" />
-            <line number="206" hits="1" branch="False" />
-            <line number="207" hits="1" branch="False" />
-            <line number="208" hits="1" branch="False" />
-            <line number="209" hits="1" branch="False" />
-            <line number="210" hits="1" branch="False" />
-            <line number="212" hits="1" branch="False" />
-            <line number="214" hits="1" branch="False" />
-            <line number="215" hits="1" branch="False" />
-            <line number="216" hits="1" branch="False" />
+            <line number="186" hits="1" branch="False" />
+            <line number="187" hits="1" branch="False" />
+            <line number="188" hits="1" branch="False" />
+            <line number="189" hits="1" branch="False" />
+            <line number="190" hits="1" branch="False" />
+            <line number="191" hits="1" branch="False" />
+            <line number="192" hits="1" branch="False" />
+            <line number="193" hits="1" branch="False" />
+            <line number="194" hits="1" branch="False" />
+            <line number="196" hits="1" branch="False" />
+            <line number="198" hits="1" branch="False" />
+            <line number="200" hits="1" branch="False" />
+            <line number="201" hits="1" branch="False" />
+            <line number="202" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;UpdateBook_Post_ShouldRedirectOnSuccess&gt;d__12" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="168" hits="1" branch="False" />
+                <line number="169" hits="1" branch="False" />
+                <line number="170" hits="1" branch="False" />
+                <line number="171" hits="1" branch="False" />
+                <line number="172" hits="1" branch="False" />
+                <line number="173" hits="1" branch="False" />
+                <line number="174" hits="1" branch="False" />
+                <line number="175" hits="1" branch="False" />
+                <line number="176" hits="1" branch="False" />
+                <line number="177" hits="1" branch="False" />
+                <line number="179" hits="1" branch="False" />
+                <line number="181" hits="1" branch="False" />
+                <line number="182" hits="1" branch="False" />
+                <line number="183" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="168" hits="1" branch="False" />
+            <line number="169" hits="1" branch="False" />
+            <line number="170" hits="1" branch="False" />
+            <line number="171" hits="1" branch="False" />
+            <line number="172" hits="1" branch="False" />
+            <line number="173" hits="1" branch="False" />
+            <line number="174" hits="1" branch="False" />
+            <line number="175" hits="1" branch="False" />
+            <line number="176" hits="1" branch="False" />
+            <line number="177" hits="1" branch="False" />
+            <line number="179" hits="1" branch="False" />
+            <line number="181" hits="1" branch="False" />
+            <line number="182" hits="1" branch="False" />
+            <line number="183" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;ViewDetails_SholdHandleDetailsNotFound&gt;d__19" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="284" hits="1" branch="False" />
+                <line number="285" hits="1" branch="False" />
+                <line number="287" hits="1" branch="False" />
+                <line number="289" hits="1" branch="False" />
+                <line number="290" hits="1" branch="False" />
+                <line number="291" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="284" hits="1" branch="False" />
+            <line number="285" hits="1" branch="False" />
+            <line number="287" hits="1" branch="False" />
+            <line number="289" hits="1" branch="False" />
+            <line number="290" hits="1" branch="False" />
+            <line number="291" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="BookProject.Tests.Tests.BookControllerTests/&lt;ViewDetails_ShouldReturnViewWithDetails&gt;d__18" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookControllerTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="267" hits="1" branch="False" />
+                <line number="268" hits="1" branch="False" />
+                <line number="269" hits="1" branch="False" />
+                <line number="270" hits="1" branch="False" />
+                <line number="271" hits="1" branch="False" />
+                <line number="272" hits="1" branch="False" />
+                <line number="273" hits="1" branch="False" />
+                <line number="274" hits="1" branch="False" />
+                <line number="276" hits="1" branch="False" />
+                <line number="278" hits="1" branch="False" />
+                <line number="279" hits="1" branch="False" />
+                <line number="280" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="267" hits="1" branch="False" />
+            <line number="268" hits="1" branch="False" />
+            <line number="269" hits="1" branch="False" />
+            <line number="270" hits="1" branch="False" />
+            <line number="271" hits="1" branch="False" />
+            <line number="272" hits="1" branch="False" />
+            <line number="273" hits="1" branch="False" />
+            <line number="274" hits="1" branch="False" />
+            <line number="276" hits="1" branch="False" />
+            <line number="278" hits="1" branch="False" />
+            <line number="279" hits="1" branch="False" />
+            <line number="280" hits="1" branch="False" />
           </lines>
         </class>
         <class name="BookProject.Tests.Tests.BookEntitiesTests" filename="OneDrive\Documents\GitHub\BookProject\BookProject.Tests\Tests\BookEntitiesTests.cs" line-rate="1" branch-rate="1" complexity="2">
