@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 using BookProject.Models.DTOS;
+using Microsoft.AspNetCore.Http;
 
 namespace BookProject.Tests.Tests
 {
@@ -288,6 +289,94 @@ namespace BookProject.Tests.Tests
 
             var redirectResult = Assert.IsType<RedirectToActionResult>(result);
             Assert.Equal("Index", redirectResult.ActionName);
+        }
+
+        [Fact]
+        public async Task AddBook_Get_ShouldReturnGenresSelectedList()
+        {
+            List<Genre> genres = new List<Genre>
+            {
+                new Genre
+                {
+                    Id = 1,
+                    GenreName = "Action"
+                },
+                new Genre
+                {
+                    Id = 2,
+                    GenreName = "Adventure"
+                }
+            };
+            _mockGenreRepo.Setup(repo => repo.GetGenres()).ReturnsAsync(genres);
+
+            var result = await _controller.AddBook();
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+            var model = Assert.IsType<BookDTO>(viewResult.Model);
+            Assert.NotNull(model.GenreList);
+            Assert.Equal(2, model.GenreList.Count());
+        }
+
+        [Fact]
+        public async Task AddBook_Post_ShouldHandleFileUploadError()
+        {
+            _controller.TempData = new TempDataDictionary(new DefaultHttpContext(), Mock.Of<ITempDataProvider>());
+            BookDTO bookDTO = new BookDTO
+            {
+                BookName = "Test Book",
+                AuthorName = "Author",
+                Price = 19.99d,
+                GenreId = 1,
+                ImageFile = new Mock<IFormFile>().Object
+            };
+
+            _mockFileService.Setup(service => service.SaveFile(bookDTO.ImageFile, It.IsAny<string[]>()))
+                .ThrowsAsync(new InvalidOperationException("Invalid file"));
+
+            var result = await _controller.AddBook( bookDTO);
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+            Assert.Equal(bookDTO, viewResult.Model);
+            Assert.True(_controller.TempData.ContainsKey("errorMessage"));
+        }
+        [Fact]
+        public async Task UpdateBook_Get_ShouldRedirectIfBookNotFound()
+        {
+            _controller.TempData = new TempDataDictionary(new DefaultHttpContext(), Mock.Of<ITempDataProvider>());
+            _mockBookRepo.Setup(repo => repo.GetBookById(It.IsAny<int>())).ReturnsAsync((Book)null);
+
+            var result = await _controller.UpdateBook(999);
+
+            var redirectResult = Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", redirectResult.ActionName);
+            Assert.True(_controller.TempData.ContainsKey("errorMessage"));
+        }
+        [Fact]
+        public async Task DeleteBook_ShouldHandleExceptionGracefully()
+        {
+            _controller.TempData = new TempDataDictionary(new DefaultHttpContext(), Mock.Of<ITempDataProvider>());
+            _mockBookRepo.Setup(repo => repo.GetBookById(It.IsAny<int>()))
+                .ThrowsAsync(new Exception("Unexpected error"));
+
+            var result = await _controller.DeleteBook(1);
+
+            var redirectResult = Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", redirectResult.ActionName);
+            Assert.True(_controller.TempData.ContainsKey("errorMessage"));
+        }
+
+        [Fact]
+        public async Task AddDetails_Get_ShouldRedirectIfBookNotFound()
+        {
+            _controller.TempData = new TempDataDictionary(new DefaultHttpContext(), Mock.Of<ITempDataProvider>());
+            _mockBookRepo.Setup(repo => repo.GetBookById(It.IsAny<int>()))
+                .ReturnsAsync((Book)null);
+
+            var result = await _controller.AddDetails(999);
+
+            var redirectResult = Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", redirectResult.ActionName);
+            Assert.True(_controller.TempData.ContainsKey("errorMessage"));
         }
     }
 }
