@@ -93,6 +93,7 @@ Manage book images, resized and validated for proper formats.
 Update stock and associate books with genres dynamically.
 
 ![image](https://github.com/user-attachments/assets/27ad33e0-8d36-48bb-85c4-81b030133c71)
+![image](https://github.com/user-attachments/assets/0ec98535-ec79-4533-9c0c-a74edfd145c3)
 
 Manage user orders, toggle payment status, and update order statuses as well as to filter and view orders by date or other criteria..
 
