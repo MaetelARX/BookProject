@@ -43,8 +43,6 @@ Modular and scalable architecture for adding new features easily. Extensive use 
 
 Data validation using FluentValidation and ASP.NET Core model validation.
 
-![image](https://github.com/user-attachments/assets/7e2798e4-999b-4711-86d3-b5286e17e5c1)
-
 🤝 Contribution:
 
 This project is open for contributions! Whether it's fixing bugs, adding features, or optimizing the codebase, feel free to fork the project, submit a pull request, or raise an issue.
