@@ -4,7 +4,7 @@ A Comprehensive Online Bookstore Management System
 
 🌟 About the Project:
 
-The BookProject is a full-stack web application designed for managing and interacting with an online bookstore. This project demonstrates a robust implementation of ASP.NET Core MVC, Entity Framework Core, and a layered architecture. With a focus on functionality, scalability, and clean code principles, the application serves multiple roles, such as administrators and end users, enabling them to manage and purchase books seamlessly.
+The BookProject is a full-stack web application designed for managing and interacting with an online bookstore. This project demonstrates a robust implementation of ASP.NET Core MVC, Entity Framework Core, and a layered architecture. With a focus on functionality, scalability, and clean code principles, the application serves multiple roles such as administrators and end users, enabling them to manage and purchase books seamlessly.
 
 Admin Operations:
 
