@@ -23,6 +23,9 @@ Add, update, or delete books with associated genres, prices, and stock details.
 
 Manage book images, resized and validated for proper formats.
 
+![image](https://github.com/user-attachments/assets/21bd504a-5e96-4425-8f68-0070405fb12d)
+
+
 Update stock and associate books with genres dynamically.
 
 ![image](https://github.com/user-attachments/assets/f726ed92-1a9c-4c30-b3fc-8f1644b8c164)
