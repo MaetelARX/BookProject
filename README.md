@@ -23,7 +23,10 @@ Add, update, or delete books with associated genres, prices, and stock details.
 
 Manage book images, resized and validated for proper formats.
 Update stock and associate books with genres dynamically.
-User Cart and Orders:
+
+![image](https://github.com/user-attachments/assets/f726ed92-1a9c-4c30-b3fc-8f1644b8c164)
+
+User can :
 
 Add, remove, and update items in the shopping cart.
 Place orders and view order history.
