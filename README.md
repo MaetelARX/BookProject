@@ -30,6 +30,9 @@ Database: SQL Server with a normalized schema for managing books, genres, users,
 
 Authentication: ASP.NET Identity for secure user management. External login integration (Google). 
 
+![image](https://github.com/user-attachments/assets/496106e6-ea68-401c-9301-0cc37fb5d2dd)
+![image](https://github.com/user-attachments/assets/e8cc9181-675f-4bcb-8f1d-a2aba94342ce)
+
 🎯 Highlights Clean: 
 
 Maintainable codebase with well-structured services, repositories, and controllers.
@@ -67,10 +70,6 @@ Repositories: Abstract database interactions for clean separation of concerns.
 Services: Provide additional business logic and helper functions. 
 
 Views: Razor templates for the frontend interface.
-
-![image](https://github.com/user-attachments/assets/496106e6-ea68-401c-9301-0cc37fb5d2dd)
-![image](https://github.com/user-attachments/assets/e8cc9181-675f-4bcb-8f1d-a2aba94342ce)
-
 
 ![image](https://github.com/user-attachments/assets/973c04f9-dc5f-4f52-af72-1dabb2e6fe60)
 
