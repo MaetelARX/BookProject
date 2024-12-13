@@ -39,6 +39,8 @@ Filter and view orders by date or other criteria.
 
 Genre Management:
 
+![image](https://github.com/user-attachments/assets/27ad33e0-8d36-48bb-85c4-81b030133c71)
+
 User can :
 
 Add, remove, and update items in the shopping cart.
