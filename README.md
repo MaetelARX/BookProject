@@ -34,13 +34,11 @@ Update stock and associate books with genres dynamically.
 
 ![image](https://github.com/user-attachments/assets/27ad33e0-8d36-48bb-85c4-81b030133c71)
 
-Manage user orders, toggle payment status, and update order statuses.
+Manage user orders, toggle payment status, and update order statuses as well as to filter and view orders by date or other criteria..
 
 ![image](https://github.com/user-attachments/assets/f726ed92-1a9c-4c30-b3fc-8f1644b8c164)
 ![image](https://github.com/user-attachments/assets/297822bd-1021-47e3-8d61-21116f4e1c5a)
 ![image](https://github.com/user-attachments/assets/66693348-25eb-4ce0-9897-ec4007d51b09)
-
-Filter and view orders by date or other criteria.
 
 Genre Management.
 
