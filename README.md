@@ -1,4 +1,6 @@
-📚 BookProject: A Comprehensive Online Bookstore Management System
+📚 BookProject:
+
+A Comprehensive Online Bookstore Management System
 
 🌟 About the Project
 
