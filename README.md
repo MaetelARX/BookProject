@@ -47,9 +47,11 @@ Data validation using FluentValidation and ASP.NET Core model validation.
 
 This project is open for contributions! Whether it's fixing bugs, adding features, or optimizing the codebase, feel free to fork the project, submit a pull request, or raise an issue.
 
-🚀 Getting Started Clone the repository. Restore the NuGet packages. Update the database connection string in appsettings.json. Run the Update-Database command to apply migrations. Build and run the application.
+🚀 Getting Started:
 
-💡 Future Enhancements
+Clone the repository. Restore the NuGet packages. Update the database connection string in appsettings.json. Run the Update-Database command to apply migrations. Build and run the application.
+
+💡 Future Enhancements:
 
 Implement a recommendation system based on user preferences.
 
@@ -144,7 +146,8 @@ Seamless user account creation and external login callbacks.
 
 And lastly: Detailed Error Handling.
 
-🎉 Final Words
+🎉 Final Words:
+
 Thank you for taking the time to explore BookProject! This project is not just a demonstration of technical skills but also a passion for creating meaningful and functional applications. Whether you're a developer looking for inspiration or a user curious about what this system can do, I hope this repository serves its purpose.
 
 If you find this project helpful, feel free to ⭐ star it on GitHub and share it with others! I’m always open to feedback and collaboration, so don’t hesitate to reach out or contribute to the project. Let’s build something amazing together! 🚀
