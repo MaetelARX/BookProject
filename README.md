@@ -31,6 +31,13 @@ Payment tracking and order status updates.
 Admin Operations:
 
 Manage user orders, toggle payment status, and update order statuses.
+
+![image](https://github.com/user-attachments/assets/297822bd-1021-47e3-8d61-21116f4e1c5a)
+![image](https://github.com/user-attachments/assets/66693348-25eb-4ce0-9897-ec4007d51b09)
+![image](https://github.com/user-attachments/assets/451dd761-1475-4e25-a138-fa49a901670f)
+
+
+
 Filter and view orders by date or other criteria.
 Genre Management:
 
