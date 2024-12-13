@@ -1,4 +1,4 @@
-📚 BookProject:
+📚 Welcome to the BookProject:
 
 A Comprehensive Online Bookstore Management System
 
