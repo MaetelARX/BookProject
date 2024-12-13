@@ -47,6 +47,9 @@ Add, remove, and update items in the shopping cart.
 Place orders and view order history.
 Payment tracking and order status updates.
 
+![image](https://github.com/user-attachments/assets/dcf4e3d8-b706-40ac-8d41-dd1fa26914e2)
+![image](https://github.com/user-attachments/assets/bf57af6e-71ec-4a25-8a40-3e7f5c9d616e)
+![image](https://github.com/user-attachments/assets/50ecb1c3-5c7f-4670-84e8-c704bec609e3)
 
 Admin Operations:
 
