@@ -21,10 +21,15 @@ Comprehensive Book Management:
 
 Admins can:
 Add, update, or delete books with associated genres, prices, and stock details.
+
 Manage book images, resized and validated for proper formats.
+
 Update stock and associate books with genres dynamically.
+
 Manage user orders, toggle payment status, and update order statuses.
+
 Filter and view orders by date or other criteria.
+
 Genre Management.
 
 ![image](https://github.com/user-attachments/assets/2a69d786-3a2d-4a6d-ae07-56182311f7fb)
