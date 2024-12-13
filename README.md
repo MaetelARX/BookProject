@@ -53,8 +53,6 @@ This project is open for contributions! Whether it's fixing bugs, adding feature
 
 Implement a recommendation system based on user preferences.
 
-Add reviews and ratings for books.
-
 Introduce an admin dashboard for better analytics.
 
 Optimize the search functionality with advanced filters.
@@ -72,8 +70,6 @@ Services: Provide additional business logic and helper functions.
 Views: Razor templates for the frontend interface.
 
 ![image](https://github.com/user-attachments/assets/973c04f9-dc5f-4f52-af72-1dabb2e6fe60)
-
-
 
 🔧 Features
 
