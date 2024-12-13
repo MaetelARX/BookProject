@@ -45,7 +45,9 @@ Genre Management.
 User can :
 
 Add, remove, and update items in the shopping cart.
+
 Place orders and view order history.
+
 Payment tracking and order status updates.
 
 ![image](https://github.com/user-attachments/assets/dcf4e3d8-b706-40ac-8d41-dd1fa26914e2)
