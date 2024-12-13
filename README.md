@@ -20,6 +20,7 @@ Secure role-based access control implemented using ASP.NET Identity.
 Comprehensive Book Management:
 
 Admins can:
+
 Add, update, or delete books with associated genres, prices, and stock details.
 
 Manage book images, resized and validated for proper formats.
