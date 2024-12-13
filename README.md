@@ -83,11 +83,11 @@ Admins can:
 
 Add, update, or delete books with associated genres, prices, and stock details.
 
-![image](https://github.com/user-attachments/assets/2a69d786-3a2d-4a6d-ae07-56182311f7fb)
-![image](https://github.com/user-attachments/assets/8e6667b5-74a7-4e70-afe2-281a45c67acb)
-
 Manage book images, resized and validated for proper formats.
 
+![image](https://github.com/user-attachments/assets/7f9d1eca-d6cb-44a5-abe1-4257a427b429)
+![image](https://github.com/user-attachments/assets/8e6667b5-74a7-4e70-afe2-281a45c67acb)
+![image](https://github.com/user-attachments/assets/e9707510-e20a-4122-ac39-139374167151)
 ![image](https://github.com/user-attachments/assets/21bd504a-5e96-4425-8f68-0070405fb12d)
 
 Update stock and associate books with genres dynamically.
