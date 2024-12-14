@@ -8,11 +8,11 @@ The BookProject is a full-stack web application designed for managing and intera
 
 Admin Operations:
 
-CRUD operations for book genres. Dynamically assign genres to books. Search and Sort Functionality:
+CRUD operations for book genres; Dynamically assign genres to books; Search and Sort Functionality:
 
-Search books by title or author. Sort books by price, title, or author for better user experience. External Login Integration:
+Search books by title or author; Sort books by price, title, or author for better user experience; External Login Integration:
 
-External login providers like Google for user authentication. Seamless user account creation and external login callbacks. Detailed Error Handling:
+External login providers like Google for user authentication; Seamless user account creation and external login callbacks; Detailed Error Handling.
 
 Graceful error handling with user-friendly messages for both frontend and backend. 
 
