@@ -140,7 +140,7 @@ Sort books by price, title, or author for better user experience.
 
 🎉 Final Words:
 
-Thank you for taking the time to explore BookProject! This project is not just a demonstration of technical skills but also a passion for creating meaningful and functional applications. Whether you're a developer looking for inspiration or a user curious about what this system can do, I hope this repository serves its purpose.
+Thank you for taking the time to explore the BookProject! This project is not just a demonstration of technical skills but also a passion for creating meaningful and functional applications. Whether you're a developer looking for inspiration or a user curious about what this system can do, I hope this repository serves its purpose.
 
 If you find this project helpful, feel free to ⭐ star it on GitHub and share it with others! I’m always open to feedback and collaboration, so don’t hesitate to reach out or contribute to the project. Let’s build something amazing together! 🚀
 
