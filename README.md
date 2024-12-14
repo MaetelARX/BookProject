@@ -10,11 +10,9 @@ Admin Operations:
 
 CRUD operations for book genres; Dynamically assign genres to books; Search and Sort Functionality.
 
-Search books by title or author; Sort books by price, title, or author for better user experience.
+Search books by title or author; Sort books by price, title, or author for better user experience,external Login Integration.
 
-External Login Integration.
-
-External login providers like Google for user authentication; Seamless user account creation and external login callbacks; Detailed Error Handling.
+External login integration - providers like Google for user authentication; Seamless user account creation and external login callbacks; Detailed Error Handling.
 
 Graceful error handling with user-friendly messages for both frontend and backend. 
 
