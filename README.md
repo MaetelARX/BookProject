@@ -129,7 +129,7 @@ Dynamically assign genres to books.
 
 ![image](https://github.com/user-attachments/assets/d44ec0cd-9acd-4c90-bc0f-a02a4e4951ec)
 
-Search and Sort Functionality:
+Search and Sort Functionality.
 
 Search books by title or author.
 
@@ -137,14 +137,6 @@ Sort books by price, title, or author for better user experience.
 
 ![image](https://github.com/user-attachments/assets/7b8b5cea-0706-4892-9496-95084066f1eb)
 ![image](https://github.com/user-attachments/assets/63e4f672-4235-4251-bf7d-7390f7218ace)
-
-External Login Integration:
-
-External login providers like Google for user authentication.
-
-Seamless user account creation and external login callbacks.
-
-And lastly: Detailed Error Handling.
 
 🎉 Final Words:
 
