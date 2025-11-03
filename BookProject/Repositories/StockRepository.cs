@@ -25,7 +25,6 @@ namespace BookProject.Repositories
             {
                 throw new InvalidOperationException($"Book with ID {stockToManage.BookId} does not exist.");
             }
-
             var existingStock = await GetStockByBookId(stockToManage.BookId);
 
             if (existingStock is null)
@@ -41,9 +40,17 @@ namespace BookProject.Repositories
             {
                 existingStock.Quantity = stockToManage.Quantity;
             }
-
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving changes: {ex.Message}");
+                throw;
+            }
         }
+
 
         public async Task<IEnumerable<StockDisplayModel>> GetStocks(string sTerm = "")
         {

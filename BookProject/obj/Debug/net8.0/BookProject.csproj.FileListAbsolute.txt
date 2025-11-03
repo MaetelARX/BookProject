@@ -300,6 +300,7 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\BookProject.pdb
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -337,6 +338,8 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
@@ -359,6 +362,7 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Moq.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\NuGet.Common.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\NuGet.Configuration.dll
@@ -369,6 +373,7 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -569,11 +574,6 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.sourcelink.json
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets\msbuild.BookProject.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets\msbuild.build.BookProject.props
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BookProject.props
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BookProject.props
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\scopedcss\bundle\BookProject.styles.css
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\scopedcss\projectbundle\BookProject.bundle.scp.css
@@ -583,8 +583,11 @@ C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.pdb
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\BookProject.genruntimeconfig.cache
 C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\ref\BookProject.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\SixLabors.ImageSharp.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Castle.Core.dll
-C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\Moq.dll
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\bin\Debug\net8.0\BookProject.staticwebassets.endpoints.json
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Konos\OneDrive\Documents\GitHub\BookProject\BookProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
